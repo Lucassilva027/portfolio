@@ -1,0 +1,22 @@
+{
+  "name": "portfolio-mvc",
+  "version": "1.0.0",
+  "description": "Portfolio moderno com arquitetura MVC",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "dev": "node --watch src/app.js"
+  },
+  "keywords": [
+    "portfolio",
+    "mvc",
+    "express",
+    "web-design"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^4.21.2"
+  }
+}

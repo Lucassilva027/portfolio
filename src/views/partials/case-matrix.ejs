@@ -1,0 +1,61 @@
+<%
+  const H = typeof headingTag !== "undefined" ? headingTag : "h3";
+  const safeProject = project || {};
+  const L = typeof labels !== "undefined" && labels ? labels : {};
+  const challenge = safeProject.challenge || "";
+  const scope = Array.isArray(safeProject.scope) ? safeProject.scope : [];
+  const stack = Array.isArray(safeProject.stack) ? safeProject.stack : [];
+  const delivery = Array.isArray(safeProject.delivery) ? safeProject.delivery : [];
+  const result = Array.isArray(safeProject.result) ? safeProject.result : [];
+%>
+<div class="case-matrix">
+  <div class="case-block">
+    <<%= H %> class="case-block__title"><%= L.challenge || "Desafio" %></<%= H %>>
+    <p class="case-block__text"><%= challenge %></p>
+  </div>
+  <div class="case-block">
+    <<%= H %> class="case-block__title"><%= L.scope || "Escopo" %></<%= H %>>
+    <ul class="case-block__list">
+      <% if (scope.length === 0) { %>
+      <li><%= L.emptyScope || "Escopo em revisão." %></li>
+      <% } %>
+      <% scope.forEach((line) => { %>
+      <li><%= line %></li>
+      <% }) %>
+    </ul>
+  </div>
+  <div class="case-block">
+    <<%= H %> class="case-block__title"><%= L.stack || "Stack" %></<%= H %>>
+    <ul class="case-block__list case-block__list--stack">
+      <% if (stack.length === 0) { %>
+      <li>Stack</li>
+      <% } %>
+      <% stack.forEach((tech) => { %>
+      <li><%= tech %></li>
+      <% }) %>
+    </ul>
+  </div>
+  <div class="case-block">
+    <<%= H %> class="case-block__title"><%= L.delivery || "Entrega" %></<%= H %>>
+    <ul class="case-block__list">
+      <% if (delivery.length === 0) { %>
+      <li><%= L.emptyDelivery || "Entregas em revisão." %></li>
+      <% } %>
+      <% delivery.forEach((line) => { %>
+      <li><%= line %></li>
+      <% }) %>
+    </ul>
+  </div>
+  <div class="case-block">
+    <<%= H %> class="case-block__title"><%= L.result || "Resultado" %></<%= H %>>
+    <ul class="case-block__list">
+      <% if (result.length === 0) { %>
+      <li><%= L.emptyResult || "Resultados em revisão." %></li>
+      <% } %>
+      <% result.forEach((line) => { %>
+      <li><%= line %></li>
+      <% }) %>
+    </ul>
+  </div>
+</div>
+

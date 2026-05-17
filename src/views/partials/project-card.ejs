@@ -1,0 +1,28 @@
+<% const p = project || {}; const compact = typeof compactCard !== "undefined" && compactCard; %>
+<article class="project-card reveal<%= compact ? ' project-card--compact' : '' %>">
+  <% if (!compact && p.image) { %>
+  <div class="project-visual project-visual--tall">
+    <img
+      src="<%= p.image %>"
+      alt="<%= p.imageAlt %>"
+      width="700"
+      height="438"
+      loading="lazy"
+      decoding="async"
+    />
+  </div>
+  <% } %>
+  <div class="project-body">
+    <h3 class="project-title project-title--sm"><%= p.title %></h3>
+    <p class="project-summary project-summary--sm"><%= p.summaryLine %></p>
+    <p class="project-status <%= p.status %>"><%= p.statusLabel %></p>
+    <% if (p.statusSub) { %>
+    <p class="project-status-sub"><%= p.statusSub %></p>
+    <% } %>
+
+    <%- include('project-surface', { project: p, ui: ui }) %>
+
+    <%- include('project-actions', { project: p, ui: ui, stacked: true, compact: compact }) %>
+  </div>
+</article>
+

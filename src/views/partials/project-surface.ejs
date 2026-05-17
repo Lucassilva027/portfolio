@@ -1,0 +1,22 @@
+<%
+  const p = project || {};
+  const labels = (typeof ui !== "undefined" && ui && ui.surface) ? ui.surface : { resultLabel: "Resultado" };
+  const stack = Array.isArray(p.stack) ? p.stack.slice(0, 5) : [];
+  const highlight = p.surfaceHighlight || (Array.isArray(p.result) ? p.result[0] : "");
+%>
+<div class="project-surface">
+  <% if (stack.length) { %>
+  <ul class="project-surface__stack" aria-label="Stack">
+    <% stack.forEach((tech) => { %>
+    <li><%= tech %></li>
+    <% }) %>
+  </ul>
+  <% } %>
+  <% if (highlight) { %>
+  <p class="project-surface__result">
+    <span class="project-surface__result-label"><%= labels.resultLabel %></span>
+    <%= highlight %>
+  </p>
+  <% } %>
+</div>
+

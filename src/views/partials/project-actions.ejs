@@ -1,0 +1,30 @@
+<% const p = project || {}; const actions = (typeof ui !== "undefined" && ui && ui.actions) ? ui.actions : { viewDetails: "Ver detalhes" }; %>
+<div class="project-actions<%= typeof stacked !== 'undefined' && stacked ? ' project-actions--stack' : '' %>">
+  <% if (p.link) { %>
+  <a
+    class="<%= typeof compact !== 'undefined' && compact ? 'project-link project-link--btn' : 'btn btn-primary' %>"
+    href="<%= p.link %>"
+    target="_blank"
+    rel="noreferrer"
+    ><%= p.linkLabel %></a
+  >
+  <% } %>
+  <% if (p.repoLink) { %>
+  <a
+    class="<%= typeof compact !== 'undefined' && compact ? 'project-link' : 'btn btn-secondary' %>"
+    href="<%= p.repoLink %>"
+    target="_blank"
+    rel="noreferrer"
+    ><%= p.repoLinkLabel %></a
+  >
+  <% } %>
+  <button
+    type="button"
+    class="btn btn-case-modal<%= typeof stacked !== 'undefined' && stacked ? ' btn-case-modal--block' : '' %>"
+    data-open-case="<%= p.id %>"
+    aria-haspopup="dialog"
+  >
+    <%= actions.viewDetails %>
+  </button>
+</div>
+
