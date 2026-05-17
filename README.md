@@ -2,7 +2,7 @@
 
 Personal portfolio built with **Node.js**, **Express**, and **EJS** following the **MVC** architectural pattern. Supports bilingual content (🇺🇸 English / 🇧🇷 Portuguese) and is deployed on Render.
 
-🌐 **Live:** [https://portfolio-xxxx.onrender.com](https://portfolio-7m7k.onrender.com) *(update with your actual URL)*
+🌐 **Live:** [https://portfolio-lucas-silva.onrender.com](https://portfolio-7m7k.onrender.com) 
 
 ---
 
