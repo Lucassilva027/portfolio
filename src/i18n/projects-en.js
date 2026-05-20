@@ -4,7 +4,8 @@ module.exports = {
       "Web product connecting TMDB titles to persisted philosophical quotes, with AI-generated interpretation from the work and the quote.",
     surfaceHighlight:
       "Live on Render with documented API and automated tests.",
-    imageAlt: "Screenshot of PhiloMedia in production on Render",
+    imageAlt:
+      "PhiloMedia screen with quote of the day and film recommendations in dialogue",
     roleLabel:
       "Full stack — REST API, external integrations, persistence, frontend, and deploy",
     challenge:

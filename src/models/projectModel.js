@@ -48,9 +48,9 @@ const projects = [
       "Swagger",
       "Render"
     ],
-    image:
-      "https://s0.wp.com/mshots/v1/https%3A%2F%2Fphilomedia.onrender.com%2Fhtml%2Findex.html?w=1400",
-    imageAlt: "Captura do PhiloMedia em produção no Render",
+    image: "/images/philomedia-hero.png",
+    imageAlt:
+      "Tela do PhiloMedia com citação filosófica do dia e recomendações de filmes em diálogo",
     link: "https://philomedia.onrender.com/html/index.html",
     linkLabel: "Abrir aplicação em produção",
     repoLink: "https://github.com/Lucassilva027/philomedia",
