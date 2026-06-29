@@ -75,12 +75,12 @@ module.exports = {
           {
             label: "Currículo (PT-BR)",
             detail: "PDF para o mercado brasileiro.",
-            href: "/curriculo-desenvolvedor.pdf"
+            href: "/curriculo_lucas.pdf"
           },
           {
             label: "Résumé (EN)",
             detail: "PDF focado em estágio full stack.",
-            href: "/lucas-silva-intern-full-stack-developer.pdf"
+            href: "/Lucas_Silva_Resume.pdf"
           }
         ]
       }

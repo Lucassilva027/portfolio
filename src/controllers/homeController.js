@@ -9,7 +9,7 @@ const { getUi, getProfile, normalizeLocale } = require("../i18n");
 const DEVELOPER_BASE = {
   name: "Lucas Oliveira da Silva",
   email: "lucasoliveirasilva2008@gmail.com",
-  whatsapp: "https://wa.me/5551999105632",
+  whatsapp: "https://wa.me/555197715632",
   linkedin: "https://www.linkedin.com/in/lucas-oliveira-silva032/",
   github: "https://github.com/Lucassilva027"
 };

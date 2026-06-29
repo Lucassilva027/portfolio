@@ -75,12 +75,12 @@ module.exports = {
           {
             label: "Résumé (EN)",
             detail: "PDF focused on full-stack internships.",
-            href: "/lucas-silva-intern-full-stack-developer.pdf"
+            href: "/Lucas_Silva_Resume.pdf"
           },
           {
             label: "Currículo (PT-BR)",
             detail: "PDF for the Brazilian market.",
-            href: "/curriculo-desenvolvedor.pdf"
+            href: "/curriculo_lucas.pdf"
           }
         ]
       }

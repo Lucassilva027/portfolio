@@ -20,7 +20,7 @@ function getProfile() {
       "Estudante de desenvolvimento de software na BYU-Idaho, baseado em Gravataí (RS). Construo aplicações full stack com React, TypeScript e Node.js e contribuo em projetos open source.",
     aboutBullets: [
       "Foco em produtos web com boa UX, código legível e deploy em ambiente real.",
-      "Busco estágio remoto em desenvolvimento de software (2026), com aprendizado contínuo em C#, .NET e ecossistema React/Next.js."
+      "Busco estágio remoto em desenvolvimento de software (2026)."
     ],
     proof: {
       headline: "Prova profissional",
@@ -67,13 +67,13 @@ function getProfile() {
           label: "Currículo (PT-BR)",
           detail:
             "Versão em português: experiências, formação e stack para o mercado local.",
-          href: "/curriculo-desenvolvedor.pdf"
+          href: "/curriculo_lucas.pdf"
         },
         {
           label: "Resume — Intern Full Stack Developer (EN)",
           detail:
             "Versão em inglês focada em estágio / internship full stack.",
-          href: "/lucas-silva-intern-full-stack-developer.pdf"
+          href: "/Lucas_Silva_Resume.pdf"
         }
       ]
     }
