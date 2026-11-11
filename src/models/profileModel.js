@@ -3,12 +3,15 @@ function getProfile() {
     stackMain: [
       "TypeScript",
       "JavaScript",
+      "Python",
       "React",
       "Next.js",
       "Node.js",
       "Express",
+      "PixiJS",
       "MongoDB",
       "PostgreSQL",
+      "SQLite",
       "HTML",
       "CSS",
       "C#",
@@ -17,7 +20,7 @@ function getProfile() {
       "Firebase"
     ],
     aboutLead:
-      "Estudante de desenvolvimento de software na BYU-Idaho, baseado em Gravataí (RS). Construo aplicações full stack com React, TypeScript e Node.js e contribuo em projetos open source.",
+      "Estudante de desenvolvimento de software na BYU-Idaho, baseado em Gravataí (RS). Construo aplicações full stack com React, TypeScript e Node.js, agentes de IA e jogos web — e publico demos reais.",
     aboutBullets: [
       "Foco em produtos web com boa UX, código legível e deploy em ambiente real.",
       "Busco estágio remoto em desenvolvimento de software (2026)."

@@ -1,0 +1,45 @@
+{
+  "title": "Composição — Arcos de quadra",
+  "question": "Mesmo mundo visual. Qual composição vira a lei do build?",
+  "options": [
+    {
+      "id": "comp-a",
+      "kind": "assigned",
+      "label": "Lane + círculo",
+      "kicker": "OPTION 1",
+      "thesis": "Nome no eixo da lane; PhiloMedia dentro do círculo da lance-livre.",
+      "palette": ["#c4a574", "#1a1a18", "#c45c26", "#e8e2d6"],
+      "materials": ["hardwood", "chalk lines", "gym shadow"],
+      "viewport": "First viewport as chosen decision comp — balanced court read.",
+      "risk": "Pode parecer mais “safe” que as variantes ousadas.",
+      "comp": ".impeccable/mocks/court-comp-a.jpg"
+    },
+    {
+      "id": "comp-b",
+      "kind": "grounded",
+      "label": "Círculo dominante",
+      "kicker": "OPTION 2",
+      "thesis": "O círculo da lance-livre engole a direita; o case vive dentro dele.",
+      "palette": ["#c4a574", "#1a1a18", "#c45c26", "#e8e2d6"],
+      "materials": ["hardwood", "chalk lines", "crop agressivo"],
+      "viewport": "Círculo enorme cropado à direita com PhiloMedia; nome alto na faixa esquerda.",
+      "risk": "Mais ousado; mobile precisa reempilhar com cuidado.",
+      "comp": ".impeccable/mocks/court-comp-b.jpg"
+    },
+    {
+      "id": "comp-c",
+      "kind": "grounded",
+      "label": "Vista de cima",
+      "kicker": "OPTION 3",
+      "thesis": "Diagrama de quadra em planta; projetos como marcas no chão.",
+      "palette": ["#c4a574", "#1a1a18", "#c45c26", "#e8e2d6"],
+      "materials": ["hardwood", "planta de quadra", "marcas de giz"],
+      "viewport": "Nome no círculo central; PhiloMedia na linha da lance-livre; Empório e Pirate no arco.",
+      "risk": "Pode ler como infográfico se o texto ficar pequeno.",
+      "comp": ".impeccable/mocks/court-comp-c.jpg"
+    }
+  ],
+  "buildPath": { "value": "comp", "toggle": false },
+  "steer": false,
+  "canon": false
+}

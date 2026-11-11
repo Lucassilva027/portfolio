@@ -1,0 +1,1193 @@
+{
+  "tool": "comp-spec",
+  "version": 1,
+  "createdAt": "2026-11-10T23:20:56.947Z",
+  "comp": ".impeccable\\mocks\\decision\\grounded-court.jpg",
+  "warnings": [
+    "region court-floor: \"bleed\": true set in the regions file (the clipped-artwork refusal is overridden: the page crops it there)"
+  ],
+  "uncoveredInkCells": [],
+  "compSize": {
+    "width": 1280,
+    "height": 720
+  },
+  "aspect": 1.7778,
+  "orientation": "landscape",
+  "palette": [
+    {
+      "hex": "#111210",
+      "coverage": 0.6493
+    },
+    {
+      "hex": "#3c2b1a",
+      "coverage": 0.1807
+    },
+    {
+      "hex": "#674b2f",
+      "coverage": 0.0653
+    },
+    {
+      "hex": "#ebeaea",
+      "coverage": 0.0543
+    },
+    {
+      "hex": "#3f4342",
+      "coverage": 0.0503
+    }
+  ],
+  "bands": [
+    {
+      "y": 0.0694,
+      "strength": 0.4004
+    },
+    {
+      "y": 0.3194,
+      "strength": 0.7045
+    },
+    {
+      "y": 0.4583,
+      "strength": 0.9917
+    },
+    {
+      "y": 0.5139,
+      "strength": 0.4476
+    },
+    {
+      "y": 0.7361,
+      "strength": 0.2442
+    },
+    {
+      "y": 0.7778,
+      "strength": 0.2629
+    },
+    {
+      "y": 0.8472,
+      "strength": 0.3442
+    }
+  ],
+  "regions": [
+    {
+      "id": "court-floor",
+      "kind": "image",
+      "note": "Full-bleed dark hardwood basketball court photograph, low angle, white chalk lines, black painted key, no UI text or icons in the plate",
+      "grid": "A0:J9",
+      "bleed": true,
+      "box": {
+        "x": 0,
+        "y": 0,
+        "w": 1,
+        "h": 1
+      },
+      "px": {
+        "x": 0,
+        "y": 0,
+        "w": 1280,
+        "h": 720
+      },
+      "aspect": 1.7778,
+      "palette": [
+        {
+          "hex": "#111210",
+          "coverage": 0.6493
+        },
+        {
+          "hex": "#3c2b1a",
+          "coverage": 0.1807
+        },
+        {
+          "hex": "#674b2f",
+          "coverage": 0.0653
+        },
+        {
+          "hex": "#ebeaea",
+          "coverage": 0.0543
+        },
+        {
+          "hex": "#3f4342",
+          "coverage": 0.0503
+        }
+      ],
+      "detail": {
+        "energy": 33.5259
+      },
+      "medium": "raster",
+      "plate": "assets/plates/court-floor.png",
+      "text": null
+    },
+    {
+      "id": "nav",
+      "kind": "chrome",
+      "note": "Top navigation strip: LS mark, Projetos Stack Sobre Contato, email and WhatsApp",
+      "grid": "A0:J0",
+      "box": {
+        "x": 0,
+        "y": 0,
+        "w": 1,
+        "h": 0.1
+      },
+      "px": {
+        "x": 0,
+        "y": 0,
+        "w": 1280,
+        "h": 72
+      },
+      "aspect": 17.7778,
+      "palette": [
+        {
+          "hex": "#080808",
+          "coverage": 0.9592
+        },
+        {
+          "hex": "#f2f2f2",
+          "coverage": 0.0226
+        },
+        {
+          "hex": "#b3b3b3",
+          "coverage": 0.0084
+        },
+        {
+          "hex": "#494949",
+          "coverage": 0.0055
+        },
+        {
+          "hex": "#797979",
+          "coverage": 0.0043
+        }
+      ],
+      "detail": {
+        "energy": 18.2546
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "surface": {
+        "flat": true,
+        "rules": false
+      }
+    },
+    {
+      "id": "name",
+      "kind": "text",
+      "note": "LUCAS OLIVEIRA DA SILVA large white condensed display",
+      "grid": "A3:F4",
+      "box": {
+        "x": 0,
+        "y": 0.3,
+        "w": 0.6,
+        "h": 0.2
+      },
+      "px": {
+        "x": 0,
+        "y": 216,
+        "w": 768,
+        "h": 144
+      },
+      "aspect": 5.3333,
+      "palette": [
+        {
+          "hex": "#0e1110",
+          "coverage": 0.6192
+        },
+        {
+          "hex": "#ebebea",
+          "coverage": 0.3188
+        },
+        {
+          "hex": "#8b8b8b",
+          "coverage": 0.0278
+        },
+        {
+          "hex": "#515151",
+          "coverage": 0.0191
+        },
+        {
+          "hex": "#b8b8b8",
+          "coverage": 0.0151
+        }
+      ],
+      "detail": {
+        "energy": 88.5412
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "surface": {
+        "flat": true,
+        "rules": false
+      },
+      "type": {
+        "comp": {
+          "lines": 1,
+          "glyphs": 20,
+          "capHeightPx": 100,
+          "inkIsDark": false,
+          "allCaps": true,
+          "advance": 0.3,
+          "advTall": 0.3,
+          "advX": null,
+          "gap": 0.06,
+          "xRatio": null,
+          "stemW": 0.1205,
+          "contrast": 0.9424,
+          "serif": 1.7713,
+          "densTall": 0.6469,
+          "densX": null,
+          "weight": 0.6469
+        },
+        "widthClass": "compressed",
+        "weightClass": "bold",
+        "chosen": {
+          "family": "League Gothic",
+          "weight": 400,
+          "fontSizePx": 137,
+          "source": "index",
+          "fp": {
+            "lines": 1,
+            "glyphs": 20,
+            "capHeightPx": 100,
+            "inkIsDark": true,
+            "allCaps": true,
+            "advance": 0.39,
+            "advTall": 0.39,
+            "advX": null,
+            "gap": 0.1,
+            "xRatio": null,
+            "stemW": 0.148,
+            "contrast": 0.9595,
+            "serif": 1.0549,
+            "densTall": 0.6404,
+            "densX": null,
+            "weight": 0.6404
+          },
+          "stamp": "5039efd6d8ae"
+        }
+      }
+    },
+    {
+      "id": "tagline",
+      "kind": "text",
+      "note": "DESENVOLVO WEB APPS, AGENTES DE IA E GAMES DE NAVEGADOR with AGENTES DE IA in orange",
+      "grid": "A5:F5",
+      "coverBox": {
+        "x": 0,
+        "y": 0.5,
+        "w": 0.6,
+        "h": 0.1
+      },
+      "box": {
+        "x": 0.0469,
+        "y": 0.5,
+        "w": 0.5344,
+        "h": 0.1
+      },
+      "px": {
+        "x": 60,
+        "y": 360,
+        "w": 684,
+        "h": 72
+      },
+      "aspect": 9.5,
+      "palette": [
+        {
+          "hex": "#201b11",
+          "coverage": 0.7721
+        },
+        {
+          "hex": "#50371e",
+          "coverage": 0.1479
+        },
+        {
+          "hex": "#484743",
+          "coverage": 0.0292
+        },
+        {
+          "hex": "#766f69",
+          "coverage": 0.0254
+        },
+        {
+          "hex": "#9e968b",
+          "coverage": 0.0254
+        }
+      ],
+      "detail": {
+        "energy": 29.9085
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "surface": {
+        "flat": true,
+        "rules": false
+      },
+      "type": {
+        "comp": {
+          "lines": 1,
+          "glyphs": 55,
+          "capHeightPx": 9.5,
+          "inkIsDark": false,
+          "allCaps": true,
+          "advance": 0.8767,
+          "advTall": 0.8767,
+          "advX": null,
+          "gap": 0.3507,
+          "xRatio": null,
+          "stemW": 0.2984,
+          "contrast": 1.3449,
+          "serif": 0.3015,
+          "densTall": 0.6292,
+          "densX": null,
+          "weight": 0.6292
+        },
+        "widthClass": "wide",
+        "weightClass": "bold"
+      }
+    },
+    {
+      "id": "featured-kicker",
+      "kind": "text",
+      "note": "PROJETO EM DESTAQUE small orange caps inside free-throw circle",
+      "grid": "G2:J2",
+      "coverBox": {
+        "x": 0.6,
+        "y": 0.2,
+        "w": 0.4,
+        "h": 0.1
+      },
+      "box": {
+        "x": 0.6,
+        "y": 0.2,
+        "w": 0.3469,
+        "h": 0.1
+      },
+      "px": {
+        "x": 768,
+        "y": 144,
+        "w": 444,
+        "h": 72
+      },
+      "aspect": 6.1667,
+      "palette": [
+        {
+          "hex": "#343837",
+          "coverage": 0.2997
+        },
+        {
+          "hex": "#795435",
+          "coverage": 0.2647
+        },
+        {
+          "hex": "#4a341f",
+          "coverage": 0.2644
+        },
+        {
+          "hex": "#a1784d",
+          "coverage": 0.135
+        },
+        {
+          "hex": "#c1b6a9",
+          "coverage": 0.0362
+        }
+      ],
+      "detail": {
+        "energy": 23.2695
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "surface": {
+        "flat": true,
+        "rules": false
+      },
+      "type": {
+        "comp": null,
+        "measuredAt": "2026-11-10T23:23:12.566Z",
+        "note": "no separable lettering in the crop; size by the region box"
+      }
+    },
+    {
+      "id": "featured-title",
+      "kind": "text",
+      "note": "PHILOMEDIA white serif display inside circle",
+      "grid": "G3:J3",
+      "box": {
+        "x": 0.6,
+        "y": 0.3,
+        "w": 0.4,
+        "h": 0.1
+      },
+      "px": {
+        "x": 768,
+        "y": 216,
+        "w": 512,
+        "h": 72
+      },
+      "aspect": 7.1111,
+      "palette": [
+        {
+          "hex": "#171b1c",
+          "coverage": 0.3718
+        },
+        {
+          "hex": "#523a22",
+          "coverage": 0.2673
+        },
+        {
+          "hex": "#3d4243",
+          "coverage": 0.2587
+        },
+        {
+          "hex": "#ededed",
+          "coverage": 0.0746
+        },
+        {
+          "hex": "#bcb6ad",
+          "coverage": 0.0277
+        }
+      ],
+      "detail": {
+        "energy": 45.854
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "surface": {
+        "flat": true,
+        "rules": false
+      },
+      "type": {
+        "comp": {
+          "lines": 1,
+          "glyphs": 12,
+          "capHeightPx": 67.5,
+          "inkIsDark": false,
+          "allCaps": false,
+          "advance": 0.3037,
+          "advTall": 0.2889,
+          "advX": null,
+          "gap": 0.0444,
+          "xRatio": 0.3556,
+          "stemW": 0.0651,
+          "contrast": 2.1569,
+          "serif": null,
+          "densTall": 0.2123,
+          "densX": null,
+          "weight": 0.2123
+        },
+        "widthClass": "compressed",
+        "weightClass": "light",
+        "chosen": {
+          "family": "Butterfly Kids",
+          "weight": 400,
+          "fontSizePx": 87,
+          "source": "index",
+          "fp": {
+            "lines": 1,
+            "glyphs": 10,
+            "capHeightPx": 66.7,
+            "inkIsDark": true,
+            "allCaps": true,
+            "advance": 0.6294,
+            "advTall": 0.6294,
+            "advX": null,
+            "gap": 0.0599,
+            "xRatio": null,
+            "stemW": 0.0393,
+            "contrast": 0.8581,
+            "serif": null,
+            "densTall": 0.1935,
+            "densX": null,
+            "weight": 0.1935
+          },
+          "stamp": "3d6e380e1368"
+        }
+      }
+    },
+    {
+      "id": "featured-body",
+      "kind": "text",
+      "note": "PhiloMedia one-line summary white sans inside circle",
+      "grid": "G4:J5",
+      "box": {
+        "x": 0.6,
+        "y": 0.4,
+        "w": 0.4,
+        "h": 0.2
+      },
+      "px": {
+        "x": 768,
+        "y": 288,
+        "w": 512,
+        "h": 144
+      },
+      "aspect": 3.5556,
+      "palette": [
+        {
+          "hex": "#131b1c",
+          "coverage": 0.5581
+        },
+        {
+          "hex": "#404544",
+          "coverage": 0.2263
+        },
+        {
+          "hex": "#523b24",
+          "coverage": 0.1493
+        },
+        {
+          "hex": "#a8a29b",
+          "coverage": 0.0375
+        },
+        {
+          "hex": "#eaeaea",
+          "coverage": 0.0287
+        }
+      ],
+      "detail": {
+        "energy": 28.2588
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "surface": {
+        "flat": true,
+        "rules": false
+      },
+      "type": {
+        "comp": {
+          "lines": 4,
+          "glyphs": 78,
+          "capHeightPx": 11.5,
+          "inkIsDark": false,
+          "allCaps": false,
+          "advance": 0.5776,
+          "advTall": 0.4621,
+          "advX": 0.5958,
+          "gap": 0.1173,
+          "xRatio": 0.757,
+          "stemW": 0.1626,
+          "contrast": 1.2738,
+          "serif": 0.4313,
+          "densTall": 0.5579,
+          "densX": 0.5535,
+          "weight": 0.5579
+        },
+        "widthClass": "normal",
+        "weightClass": "medium"
+      }
+    },
+    {
+      "id": "featured-cta",
+      "kind": "control",
+      "note": "VER PROJETO link with orange arrow",
+      "grid": "G5:I5",
+      "coverBox": {
+        "x": 0.6,
+        "y": 0.5,
+        "w": 0.3,
+        "h": 0.1
+      },
+      "box": {
+        "x": 0.6234,
+        "y": 0.5,
+        "w": 0.2062,
+        "h": 0.1
+      },
+      "px": {
+        "x": 798,
+        "y": 360,
+        "w": 264,
+        "h": 72
+      },
+      "aspect": 3.6667,
+      "palette": [
+        {
+          "hex": "#131a1b",
+          "coverage": 0.5669
+        },
+        {
+          "hex": "#474a49",
+          "coverage": 0.3757
+        },
+        {
+          "hex": "#f1f1f1",
+          "coverage": 0.0217
+        },
+        {
+          "hex": "#60665a",
+          "coverage": 0.0193
+        },
+        {
+          "hex": "#a7a7a8",
+          "coverage": 0.0164
+        }
+      ],
+      "detail": {
+        "energy": 35.5563
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "surface": {
+        "flat": true,
+        "rules": false
+      }
+    },
+    {
+      "id": "arc-emporio-kicker",
+      "kind": "text",
+      "note": "AGENTE DE IA orange small caps",
+      "grid": "A7:C7",
+      "coverBox": {
+        "x": 0,
+        "y": 0.7,
+        "w": 0.3,
+        "h": 0.1
+      },
+      "box": {
+        "x": 0.15,
+        "y": 0.7,
+        "w": 0.15,
+        "h": 0.1
+      },
+      "px": {
+        "x": 192,
+        "y": 504,
+        "w": 192,
+        "h": 72
+      },
+      "aspect": 2.6667,
+      "palette": [
+        {
+          "hex": "#19150c",
+          "coverage": 0.8266
+        },
+        {
+          "hex": "#eeeeec",
+          "coverage": 0.0857
+        },
+        {
+          "hex": "#b4b3b2",
+          "coverage": 0.0343
+        },
+        {
+          "hex": "#34170d",
+          "coverage": 0.0295
+        },
+        {
+          "hex": "#514f4d",
+          "coverage": 0.024
+        }
+      ],
+      "detail": {
+        "energy": 35.015
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "surface": {
+        "flat": true,
+        "rules": false
+      },
+      "type": {
+        "comp": {
+          "lines": 1,
+          "glyphs": 10,
+          "capHeightPx": 28.8,
+          "inkIsDark": false,
+          "allCaps": false,
+          "advance": 0.5739,
+          "advTall": 0.5913,
+          "advX": 0.5565,
+          "gap": 0.0696,
+          "xRatio": 0.7739,
+          "stemW": 0.1279,
+          "contrast": 1.8832,
+          "serif": 1.9379,
+          "densTall": 0.3872,
+          "densX": 0.4496,
+          "weight": 0.3872
+        },
+        "widthClass": "condensed",
+        "weightClass": "regular"
+      }
+    },
+    {
+      "id": "arc-emporio-title",
+      "kind": "text",
+      "note": "EMPÓRIO AI AGENT white serif",
+      "grid": "A7:D8",
+      "box": {
+        "x": 0,
+        "y": 0.7,
+        "w": 0.4,
+        "h": 0.2
+      },
+      "px": {
+        "x": 0,
+        "y": 504,
+        "w": 512,
+        "h": 144
+      },
+      "aspect": 3.5556,
+      "palette": [
+        {
+          "hex": "#16130a",
+          "coverage": 0.8488
+        },
+        {
+          "hex": "#3a2714",
+          "coverage": 0.0858
+        },
+        {
+          "hex": "#efeeec",
+          "coverage": 0.0327
+        },
+        {
+          "hex": "#59290e",
+          "coverage": 0.019
+        },
+        {
+          "hex": "#b2b2b1",
+          "coverage": 0.0137
+        }
+      ],
+      "detail": {
+        "energy": 31.0367
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "surface": {
+        "flat": true,
+        "rules": false
+      },
+      "type": {
+        "comp": {
+          "lines": 1,
+          "glyphs": 14,
+          "capHeightPx": 27.5,
+          "inkIsDark": false,
+          "allCaps": false,
+          "advance": 0.6182,
+          "advTall": 0.6182,
+          "advX": 0.6182,
+          "gap": 0.0727,
+          "xRatio": 0.8045,
+          "stemW": 0.1346,
+          "contrast": 1.893,
+          "serif": 2.0908,
+          "densTall": 0.395,
+          "densX": 0.4444,
+          "weight": 0.395
+        },
+        "widthClass": "normal",
+        "weightClass": "regular"
+      }
+    },
+    {
+      "id": "arc-emporio-body",
+      "kind": "text",
+      "note": "Empório short summary white",
+      "grid": "A8:D8",
+      "box": {
+        "x": 0,
+        "y": 0.8,
+        "w": 0.4,
+        "h": 0.1
+      },
+      "px": {
+        "x": 0,
+        "y": 576,
+        "w": 512,
+        "h": 72
+      },
+      "aspect": 7.1111,
+      "palette": [
+        {
+          "hex": "#13110a",
+          "coverage": 0.9084
+        },
+        {
+          "hex": "#42210d",
+          "coverage": 0.0443
+        },
+        {
+          "hex": "#ededed",
+          "coverage": 0.0202
+        },
+        {
+          "hex": "#2f2f2b",
+          "coverage": 0.0152
+        },
+        {
+          "hex": "#575754",
+          "coverage": 0.0119
+        }
+      ],
+      "detail": {
+        "energy": 25.1546
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "surface": {
+        "flat": true,
+        "rules": false
+      },
+      "type": {
+        "comp": {
+          "lines": 3,
+          "glyphs": 57,
+          "capHeightPx": 11.2,
+          "inkIsDark": false,
+          "allCaps": false,
+          "advance": 0.6179,
+          "advTall": 0.6504,
+          "advX": 0.5903,
+          "gap": 0.1073,
+          "xRatio": 0.7429,
+          "stemW": 0.1773,
+          "contrast": 1.1201,
+          "serif": 0.5791,
+          "densTall": 0.5416,
+          "densX": 0.595,
+          "weight": 0.5416
+        },
+        "widthClass": "normal",
+        "weightClass": "medium"
+      }
+    },
+    {
+      "id": "arc-emporio-cta",
+      "kind": "control",
+      "note": "EXPLORAR link",
+      "grid": "A8:B9",
+      "box": {
+        "x": 0,
+        "y": 0.8,
+        "w": 0.2,
+        "h": 0.2
+      },
+      "px": {
+        "x": 0,
+        "y": 576,
+        "w": 256,
+        "h": 144
+      },
+      "aspect": 1.7778,
+      "palette": [
+        {
+          "hex": "#0e0e09",
+          "coverage": 0.9845
+        },
+        {
+          "hex": "#e7e7e7",
+          "coverage": 0.0054
+        },
+        {
+          "hex": "#2f0f08",
+          "coverage": 0.0039
+        },
+        {
+          "hex": "#868686",
+          "coverage": 0.0032
+        },
+        {
+          "hex": "#454545",
+          "coverage": 0.003
+        }
+      ],
+      "detail": {
+        "energy": 12.1493
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "surface": {
+        "flat": true,
+        "rules": false
+      }
+    },
+    {
+      "id": "arc-pirate-kicker",
+      "kind": "text",
+      "note": "JOGO DE NAVEGADOR orange small caps",
+      "grid": "F7:H7",
+      "box": {
+        "x": 0.5,
+        "y": 0.7,
+        "w": 0.3,
+        "h": 0.1
+      },
+      "px": {
+        "x": 640,
+        "y": 504,
+        "w": 384,
+        "h": 72
+      },
+      "aspect": 5.3333,
+      "palette": [
+        {
+          "hex": "#513b27",
+          "coverage": 0.5526
+        },
+        {
+          "hex": "#201a12",
+          "coverage": 0.3191
+        },
+        {
+          "hex": "#77593b",
+          "coverage": 0.0677
+        },
+        {
+          "hex": "#ebe9e7",
+          "coverage": 0.0457
+        },
+        {
+          "hex": "#a65e2f",
+          "coverage": 0.0148
+        }
+      ],
+      "detail": {
+        "energy": 34.701
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "surface": {
+        "flat": true,
+        "rules": false
+      },
+      "type": {
+        "comp": {
+          "lines": 1,
+          "glyphs": 10,
+          "capHeightPx": 22.4,
+          "inkIsDark": false,
+          "allCaps": true,
+          "advance": 0.6151,
+          "advTall": 0.6151,
+          "advX": null,
+          "gap": 0.1789,
+          "xRatio": null,
+          "stemW": 0.1635,
+          "contrast": 2.0889,
+          "serif": 1.4519,
+          "densTall": 0.481,
+          "densX": null,
+          "weight": 0.481
+        },
+        "widthClass": "normal",
+        "weightClass": "medium"
+      }
+    },
+    {
+      "id": "arc-pirate-title",
+      "kind": "text",
+      "note": "PIRATE BATTLE white serif",
+      "grid": "F7:J8",
+      "coverBox": {
+        "x": 0.5,
+        "y": 0.7,
+        "w": 0.5,
+        "h": 0.2
+      },
+      "box": {
+        "x": 0.5,
+        "y": 0.7,
+        "w": 0.3984,
+        "h": 0.1667
+      },
+      "px": {
+        "x": 640,
+        "y": 504,
+        "w": 510,
+        "h": 120
+      },
+      "aspect": 4.25,
+      "palette": [
+        {
+          "hex": "#4e3c29",
+          "coverage": 0.5616
+        },
+        {
+          "hex": "#201b14",
+          "coverage": 0.3413
+        },
+        {
+          "hex": "#76593b",
+          "coverage": 0.0353
+        },
+        {
+          "hex": "#a85e30",
+          "coverage": 0.0342
+        },
+        {
+          "hex": "#eeecea",
+          "coverage": 0.0275
+        }
+      ],
+      "detail": {
+        "energy": 28.9085
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "surface": {
+        "flat": true,
+        "rules": false
+      },
+      "type": {
+        "comp": {
+          "lines": 1,
+          "glyphs": 10,
+          "capHeightPx": 22.2,
+          "inkIsDark": false,
+          "allCaps": true,
+          "advance": 0.6202,
+          "advTall": 0.6202,
+          "advX": null,
+          "gap": 0.1804,
+          "xRatio": null,
+          "stemW": 0.1667,
+          "contrast": 2.1112,
+          "serif": 1.4491,
+          "densTall": 0.4702,
+          "densX": null,
+          "weight": 0.4702
+        },
+        "widthClass": "normal",
+        "weightClass": "regular"
+      }
+    },
+    {
+      "id": "arc-pirate-body",
+      "kind": "text",
+      "note": "Pirate Battle short summary white",
+      "grid": "F8:J8",
+      "box": {
+        "x": 0.5,
+        "y": 0.8,
+        "w": 0.5,
+        "h": 0.1
+      },
+      "px": {
+        "x": 640,
+        "y": 576,
+        "w": 640,
+        "h": 72
+      },
+      "aspect": 8.8889,
+      "palette": [
+        {
+          "hex": "#221d16",
+          "coverage": 0.6267
+        },
+        {
+          "hex": "#443728",
+          "coverage": 0.2963
+        },
+        {
+          "hex": "#452512",
+          "coverage": 0.0304
+        },
+        {
+          "hex": "#733d1d",
+          "coverage": 0.0288
+        },
+        {
+          "hex": "#974f24",
+          "coverage": 0.0178
+        }
+      ],
+      "detail": {
+        "energy": 17.3581
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "surface": {
+        "flat": true,
+        "rules": false
+      },
+      "type": {
+        "comp": {
+          "lines": 2,
+          "glyphs": 32,
+          "capHeightPx": 11.2,
+          "inkIsDark": false,
+          "allCaps": false,
+          "advance": 0.6017,
+          "advTall": 0.6684,
+          "advX": 0.5743,
+          "gap": 0.1304,
+          "xRatio": 0.7737,
+          "stemW": 0.1711,
+          "contrast": 1.2107,
+          "serif": 0.2669,
+          "densTall": 0.5398,
+          "densX": 0.5253,
+          "weight": 0.5398
+        },
+        "widthClass": "condensed",
+        "weightClass": "medium"
+      }
+    },
+    {
+      "id": "arc-pirate-cta",
+      "kind": "control",
+      "note": "JOGAR link",
+      "grid": "F8:G9",
+      "box": {
+        "x": 0.5,
+        "y": 0.8,
+        "w": 0.2,
+        "h": 0.2
+      },
+      "px": {
+        "x": 640,
+        "y": 576,
+        "w": 256,
+        "h": 144
+      },
+      "aspect": 1.7778,
+      "palette": [
+        {
+          "hex": "#181710",
+          "coverage": 0.849
+        },
+        {
+          "hex": "#392415",
+          "coverage": 0.0998
+        },
+        {
+          "hex": "#683618",
+          "coverage": 0.0284
+        },
+        {
+          "hex": "#eeeeee",
+          "coverage": 0.0122
+        },
+        {
+          "hex": "#b2b2b2",
+          "coverage": 0.0107
+        }
+      ],
+      "detail": {
+        "energy": 20.951
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "surface": {
+        "flat": true,
+        "rules": false
+      }
+    }
+  ],
+  "compSha256": "1b7cc151daa556f40bd9fff35606c2f3b930d0fb0d213b945985b2700ce495d8",
+  "regionsSource": {
+    "path": ".impeccable\\build\\regions.json",
+    "sha256": "1d819fdf96b3dae0235e5ae2c28d4c9cc56aaa49ced68c16b41a6ac53dafb054"
+  }
+}

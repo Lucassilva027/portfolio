@@ -18,12 +18,12 @@ const DEVELOPER_COPY = {
   en: {
     role: "Full Stack Developer",
     tagline:
-      "Building and shipping web applications with real deployments and documented APIs."
+      "Shipping web apps, AI agents, and browser games — with real demos and documented code."
   },
   pt: {
     role: "Desenvolvedor Full Stack",
     tagline:
-      "React, Node.js, TypeScript e aplicações web em produção."
+      "Apps web, agentes de IA e jogos no navegador — com demos reais e código documentado."
   }
 };
 

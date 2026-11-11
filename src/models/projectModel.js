@@ -1,15 +1,157 @@
 const projects = [
   {
+    id: "emporio-ai-agent",
+    title: "Empório da Música — Agente AI",
+    featured: false,
+    homeTier: "primary",
+    surfaceHighlight:
+      "Desafio técnico AI Engineer (Artefact): agente híbrido com tools SQL, RAG e failover de LLM.",
+    roleLabel:
+      "AI Engineer — agente ReAct/Function Calling, RAG híbrido, ETL SQLite e interfaces CLI/Streamlit",
+    summaryLine:
+      "Assistente de atendimento \"Tom\" para loja de instrumentos: consulta catálogo/estoque/pedidos em SQLite, responde políticas via RAG e recusa com educação o que está fora do escopo.",
+    challenge:
+      "Entregar um agente de mensagens confiável para atendimento: números de catálogo sem alucinação, políticas explicadas com trechos recuperados, persona consistente e funcionamento mesmo sem API key de LLM.",
+    scope: [
+      "Persona Tom com system prompt alinhado a políticas da loja (PIX, parcelas, LGPD, prazos).",
+      "Tools SQL determinísticas para preços, estoque, promoções, pedidos e elegibilidade de troca.",
+      "RAG híbrido sobre o Manual de Políticas (PDF): embeddings MiniLM + TF-IDF + boosting por seção.",
+      "Camada híbrida: Function Calling (Groq/Gemini) com failover e motor local ReAct zero-config.",
+      "Interfaces CLI (Rich) e web (Streamlit) com histórico de sessão em SQLite.",
+      "Pipeline ETL com auditoria de qualidade dos CSVs de produtos e pedidos."
+    ],
+    delivery: [
+      "Arquitetura EmporioAgent + StoreToolkit + PolicyRAGEngine com as mesmas tools no caminho cloud e local.",
+      "Provedores Groq e Gemini com `LLM_PROVIDER=auto` e fallback local sem chave.",
+      "Persistência de histórico/contexto do cliente para retomar conversa na CLI e na UI.",
+      "Data de referência configurável para avaliar prazos de forma estável nos testes.",
+      "Suíte pytest e scripts de diagnóstico (`ping_llm`, geração de exemplos de conversa).",
+      "README com arquitetura, decisões híbridas e instruções de setup Windows/Linux."
+    ],
+    result: [
+      "Protótipo completo do desafio Artefact, rodando localmente com ou sem LLM cloud.",
+      "Separação clara entre dados tabulares (SQL) e políticas textuais (RAG), evitando inventar preço/estoque.",
+      "Failover entre provedores e motor local para demos estáveis em free tier.",
+      "Base documentada para evoluir com mais tools, observabilidade ou deploy do chat."
+    ],
+    stack: [
+      "Python",
+      "SQLite",
+      "Streamlit",
+      "Groq",
+      "Google Gemini",
+      "RAG",
+      "sentence-transformers",
+      "TF-IDF",
+      "Rich CLI",
+      "pytest"
+    ],
+    image:
+      "https://opengraph.githubassets.com/1/Lucassilva027/emporio-da-musica-ai-agent",
+    imageAlt:
+      "Preview do repositório Empório da Música — Agente de Atendimento no GitHub",
+    link: "",
+    linkLabel: "Abrir aplicação em produção",
+    repoLink: "https://github.com/Lucassilva027/emporio-da-musica-ai-agent",
+    repoLinkLabel: "Abrir código no GitHub",
+    status: "implementation",
+    statusLabel: "Implementação full stack documentada",
+    statusSub: "Desafio Técnico AI Engineer — Artefact (2026)",
+    caseStudy: {
+      objective:
+        "Provar capacidade de AI Engineer com agente de atendimento grounded: tools SQL, RAG de políticas e operação resiliente sem depender de um único provedor de LLM.",
+      process:
+        "Leitura do briefing e do manual, modelagem ETL/SQLite, implementação das tools, motor local + Function Calling, UI Streamlit/CLI, testes e exemplos de conversa.",
+      decisions: [
+        "Híbrido SQL + RAG para não misturar fatos tabulares com texto de política.",
+        "Motor local determinístico como fallback e modo demo zero-config.",
+        "Failover Groq → Gemini em vez de um único provedor pago.",
+        "Persona e regras críticas injetadas no system prompt para tom e conformidade."
+      ],
+      outcomeDetail:
+        "O repositório entrega agente completo com tools, RAG, CLI, Streamlit e testes; o modal deste portfólio resume objetivo, processo e decisões para leitura técnica rápida."
+    }
+  },
+  {
+    id: "shooter-naval-2d",
+    title: "Pirate Battle",
+    featured: false,
+    homeTier: "primary",
+    surfaceHighlight:
+      "Jogo 2D top-down na Vercel com simulação determinística, ranking e cenários de rede mockados.",
+    roleLabel:
+      "Game Developer — TypeScript, PixiJS, Vite, simulação fixa e UX de ranking/histórico",
+    summaryLine:
+      "Shooter naval top-down: navegar, atirar canhões frontais e laterais, evitar ilhas/inimigos e sobreviver por pontos — entrega do Jungle Gaming Game Developer Challenge.",
+    challenge:
+      "Entregar um jogo jogável em navegador com simulação determinística, HUD claro, controles teclado/touch, persistência local de perfil e ranking resiliente a falhas de rede (incluindo offline).",
+    scope: [
+      "Simulação de passo fixo com seed URL para partidas reproduzíveis e três layouts de ilhas.",
+      "Controles teclado + stick/touch em landscape; pausa e opções de duração/spawn.",
+      "HUD de vida, score, tempo e reload dos canhões; shake de câmera com respeito a reduced-motion.",
+      "Ranking e histórico paginados com submissão idempotente de partidas.",
+      "MSW com cenários de rede (latência, timeout, falha, fora de ordem) para testar resiliência.",
+      "Chunk lazy do battle screen (PixiJS) com estados de loading e erro."
+    ],
+    delivery: [
+      "App Vite + TypeScript com configuração de gameplay congelada por partida.",
+      "Arena PixiJS separada do shell de menus/ranking para performance e code-splitting.",
+      "Perfil de capitão, personal best por configuração e fila local de resultados pendentes.",
+      "CSP e variáveis `VITE_API_*` documentadas para mock vs. backend real.",
+      "Vitest, ESLint e typecheck no fluxo de comandos do desafio.",
+      "Deploy público na Vercel com demo jogável."
+    ],
+    result: [
+      "Demo live em https://shooter-naval-2d.vercel.app com partida completa e ranking.",
+      "Simulação determinística facilita QA e regressão por seed.",
+      "Cenários MSW tornam falhas de rede reproduzíveis sem backend real.",
+      "Base pronta para apontar a uma API real sem reescrever o gameplay."
+    ],
+    stack: [
+      "TypeScript",
+      "PixiJS",
+      "Vite",
+      "MSW",
+      "Vitest",
+      "ESLint",
+      "Vercel"
+    ],
+    image:
+      "https://s0.wp.com/mshots/v1/https%3A%2F%2Fshooter-naval-2d.vercel.app%2F?w=1400",
+    imageAlt: "Captura do Pirate Battle em produção na Vercel",
+    link: "https://shooter-naval-2d.vercel.app",
+    linkLabel: "Abrir aplicação em produção",
+    repoLink: "https://github.com/Lucassilva027/shooter-naval-2d",
+    repoLinkLabel: "Abrir código no GitHub",
+    status: "online",
+    statusLabel: "Produção",
+    statusSub: "Jungle Gaming — Game Developer Challenge",
+    caseStudy: {
+      objective:
+        "Entregar um shooter naval 2D completo para o desafio Jungle Gaming: jogabilidade, HUD, ranking e resiliência de rede em um único app web.",
+      process:
+        "Definição de config de gameplay, implementação da simulação e da arena PixiJS, menus/ranking com MSW, hardening de cenários de rede e publish na Vercel.",
+      decisions: [
+        "Passo fixo + seed para partidas reproduzíveis e testes estáveis.",
+        "PixiJS em chunk lazy separado dos menus para isolar custo de GPU/JS.",
+        "MSW com seletor de cenários para validar UX offline/timeout sem backend.",
+        "Cap de 8 inimigos e regras de spawn explícitas para balanceamento."
+      ],
+      outcomeDetail:
+        "O demo em produção cobre partida, ranking e histórico; o modal deste portfólio documenta objetivo, processo e decisões técnicas para avaliação rápida."
+    }
+  },
+  {
     id: "philomedia",
     title: "PhiloMedia",
     featured: true,
     homeTier: "featured",
     surfaceHighlight:
-      "Fluxo em produção no Render com API documentada e testes automatizados.",
+      "Já em produção no Render (API + testes) — produto ainda em finalização, bem próximo do fechamento.",
     roleLabel:
       "Full stack — API REST, integrações externas, persistência, frontend e deploy",
     summaryLine:
-      "Produto web que conecta obras do TMDB a citações filosóficas persistidas, com interpretação complementar gerada com IA a partir da obra e da citação.",
+      "Produto web que conecta obras do TMDB a citações filosóficas persistidas, com interpretação gerada com IA — já utilizável, ainda não completo.",
     challenge:
       "Projetar e implementar um fluxo ponta a ponta de descoberta de mídia: catálogo externo confiável, metadados ricos, citação contextualizada e texto explicativo gerado — com API versionável, dados em banco e ambiente de produção reproduzível.",
     scope: [
@@ -57,7 +199,7 @@ const projects = [
     repoLinkLabel: "Abrir código no GitHub",
     status: "online",
     statusLabel: "Produção",
-    statusSub: "",
+    statusSub: "Ainda não completo — bem próximo do fechamento",
     caseStudy: {
       objective:
         "Validar produto de mídia + filosofia com catálogo real, persistência e camada de leitura assistida por modelo de linguagem, com contratos HTTP explícitos e deploy reproduzível.",
@@ -70,7 +212,7 @@ const projects = [
         "`render.yaml` e configuração explícita de ambiente para reduzir divergência entre local e produção."
       ],
       outcomeDetail:
-        "O repositório descreve um núcleo já operacional em produção: busca e detalhe TMDB, citação persistida, leitura gerada, API documentada e testes automatizados; o modal deste portfólio consolida objetivo, processo e decisões para leitura técnica rápida por recrutador ou tech lead."
+        "O núcleo já roda em produção (busca/detalhe TMDB, citação persistida, leitura gerada, API documentada e testes), mas o produto ainda não está completo — falta fechar itens de roadmap próximos do lançamento. O modal resume objetivo, processo e decisões para leitura técnica rápida."
     }
   },
   {
@@ -144,73 +286,77 @@ const projects = [
     }
   },
   {
-    id: "tkdmanagerpro",
-    title: "TKDManagerPro",
+    id: "tatame-manager",
+    title: "Tatame Manager",
     featured: false,
-    homeTier: "archive",
+    homeTier: "primary",
     surfaceHighlight:
-      "MVP administrativo em Node/Express com domínio de academia modelado ponta a ponta.",
+      "SaaS em produção para academias de Taekwondo — finanças, turmas, mensalidades e assinaturas.",
     roleLabel:
-      "Full stack — Node.js, Express, EJS, MVC no servidor, modelagem de domínio e UI administrativa",
+      "Full stack — React/TypeScript, Node/Express, PostgreSQL, JWT, jobs e integrações (WhatsApp/e-mail)",
     summaryLine:
-      "Aplicação web para cadastro de alunos, turmas e registro de presença, com painel consolidado para a equipe administrativa e professores.",
+      "SaaS para academias de Taekwondo: dashboards financeiros, turmas, alunos, mensalidades e assinaturas dos professores — com avisos por WhatsApp e e-mail.",
     challenge:
-      "Centralizar cadastro, vínculo a turmas e registro de presença em uma única aplicação web, com regras de negócio no servidor, consistência de dados e interface administrativa utilizável em horário de pico da academia.",
+      "Centralizar operação e cobrança da academia em um produto multi-perfil (professor/aluno), com assinatura condicionando acesso, jobs de aviso de mensalidade e stack tipada pronta para produção.",
     scope: [
-      "Módulo administrativo para cadastro e edição de alunos, faixas e vínculo a turmas.",
-      "Fluxo de registro e consulta de presença com visão por turma e por período.",
-      "Superfície EJS com partials compartilhados entre listagens e formulários.",
-      "API HTTP interna (rotas Express) alinhada a recursos de domínio.",
-      "Configuração externalizada por ambiente (porta, segredo de sessão, URLs).",
-      "Preparação para relatórios derivados do mesmo modelo de dados sem migração destrutiva."
+      "Painel do professor: dashboard financeiro, turmas, alunos, mensalidades e gestão de assinatura.",
+      "Portal do aluno: dados pessoais, mensalidades e jornada de pagamento.",
+      "Autenticação JWT para professores e alunos, com verificação de assinatura ativa.",
+      "Cadastro de professor com criação ou vínculo de associação.",
+      "Geração automática de mensalidades e histórico de pagamentos.",
+      "Avisos de cobrança por WhatsApp (W-API) e e-mail (Resend/SMTP) em marcos D-2, D0 e D+2."
     ],
     delivery: [
-      "Camada Express com rotas RESTful por recurso e middleware de tratamento de erro uniforme.",
-      "Validação de entrada no servidor como fonte da verdade, com feedback renderizado nas views.",
-      "Decomposição MVC: controladores finos, serviços de domínio e camada de acesso a dados isolável.",
-      "Templates EJS com componentização via partials para listas densas, filtros e ações em lote.",
-      "Modelagem de entidades (aluno, turma, presença) com índices e relações coerentes com o uso semanal.",
-      "Camada de apresentação responsiva para uso em desktop e smartphone no balcão e no tatame."
+      "Frontend React + TypeScript (Vite), React Router, React Query e Recharts.",
+      "Backend Node.js + Express com TypeScript, PostgreSQL e autenticação JWT.",
+      "Schema SQL versionado (`schema.sql` / `seed.sql`) e Docker Compose para bootstrap local.",
+      "Jobs de aviso de mensalidade/assinatura com idempotência e allowlist de teste.",
+      "E-mails transacionais (verificação, convite de feedback, alertas de sessão WhatsApp).",
+      "Deploy público em https://tatamemanager.tech/."
     ],
     result: [
-      "Código-base com limites claros de domínio, apto a evoluir com relatórios e perfis sem reescrita do núcleo.",
-      "Interface administrativa orientada a tarefas repetitivas: poucos cliques por check-in e leitura tabular eficiente.",
-      "Contrato HTTP e views alinhados, reduzindo divergência entre o que o usuário envia e o que o servidor persiste.",
-      "Representação visual da UI administrativa neste portfólio (SVG de alta fidelidade ao layout entregue) para revisão de produto sem depender de ambiente público."
+      "Produto utilizável em produção com fluxos de professor e aluno já operacionais.",
+      "Domínio financeiro e acadêmico modelado de ponta a ponta (turmas, mensalidades, assinatura).",
+      "Canal de cobrança automatizado (WhatsApp + e-mail) além do portal do aluno.",
+      "Ainda não completo — bem próximo do fechamento; repositório privado em outra conta."
     ],
     stack: [
+      "React",
+      "TypeScript",
+      "Vite",
+      "React Query",
+      "Recharts",
       "Node.js",
       "Express",
-      "EJS",
-      "JavaScript",
-      "CSS",
-      "MVC",
-      "REST",
-      "Modelagem de dados"
+      "PostgreSQL",
+      "JWT",
+      "Docker",
+      "Resend",
+      "WhatsApp API"
     ],
     image: "/images/tkd-dashboard-mock.svg",
     imageAlt:
-      "Representação gráfica da interface administrativa do TKDManagerPro alinhada ao layout entregue",
-    link: "",
+      "Interface administrativa do Tatame Manager — dashboard financeiro e gestão de academia",
+    link: "https://tatamemanager.tech/",
     linkLabel: "Abrir aplicação em produção",
     repoLink: "",
-    repoLinkLabel: "Abrir código no GitHub",
-    status: "implementation",
-    statusLabel: "Implementação full stack documentada",
-    statusSub: "",
+    repoLinkLabel: "",
+    status: "online",
+    statusLabel: "Produção",
+    statusSub: "Ainda não completo — bem próximo do fechamento",
     caseStudy: {
       objective:
-        "Fornecer à academia um sistema único para cadastro, organização de turmas e registro de presença, com regras centralizadas no servidor e interface administrativa consistente.",
+        "Entregar um SaaS completo para academias de Taekwondo: operação (turmas/alunos), cobrança (mensalidades/assinatura) e comunicação automática, com stack tipada e ambiente de produção real.",
       process:
-        "Modelagem do domínio a partir dos atores (secretaria, professor), definição dos casos de uso semanais, implementação das rotas e views, revisão de validação e encerramento com pacote pronto para hospedagem em ambiente Node.",
+        "Modelagem SQL do domínio, API Express tipada, frontend React com React Query, jobs de aviso, integração W-API/Resend e publicação em tatamemanager.tech.",
       decisions: [
-        "Express como framework HTTP único com renderização no servidor para reduzir complexidade operacional.",
-        "EJS para composição de páginas administrativas com baixo acoplamento a assets estáticos.",
-        "Validação e invariantes de negócio no servidor para evitar estados inválidos mesmo com requisições diretas.",
-        "Separação MVC explícita para facilitar testes de serviço e substituição futura da camada de persistência."
+        "React + Vite no front e Express/TypeScript no back para um monólito modular tipado.",
+        "PostgreSQL com `schema.sql` como fonte da verdade (sem pasta de migrations para ambiente novo).",
+        "Assinatura do professor como gate de acesso ao painel, alinhado ao modelo SaaS.",
+        "Avisos D-2/D0/D+2 com idempotência para não spammar alunos e professores."
       ],
       outcomeDetail:
-        "O case descreve uma aplicação web completa no padrão MVC com domínio de academia modelado de ponta a ponta; a ficha técnica deste modal consolida objetivo, processo e decisões arquiteturais para avaliação por recrutador ou engenheiro de software."
+        "O produto já está online com painéis, cobrança e avisos; ainda falta fechar itens finais antes de considerar completo. O código é privado — a ficha técnica deste modal resume o que o README atual descreve."
     }
   },
   {
@@ -219,34 +365,34 @@ const projects = [
     featured: false,
     homeTier: "archive",
     surfaceHighlight:
-      "Microsserviços .NET e frontend Angular com fluxo fiscal completo em ambiente local.",
+      "Full stack com microsserviços ASP.NET Core 10 + Angular 20 — estoque e faturamento isolados.",
     roleLabel:
-      "Full stack — Angular, ASP.NET Core, microsserviços, EF Core e integração entre domínios de estoque e faturamento",
+      "Full stack — Angular 20, ASP.NET Core 10, microsserviços, EF Core e integração estoque/faturamento",
     summaryLine:
-      "Aplicação para cadastro de produtos, emissão de notas fiscais com numeração sequencial, impressão controlada por status e baixa de estoque orquestrada entre dois microsserviços .NET.",
+      "Emissão e gestão de notas fiscais com numeração sequencial, impressão por status e baixa de estoque entre dois microsserviços .NET e um frontend Angular.",
     challenge:
-      "Modelar emissão e fechamento de notas fiscais com regras de negócio distribuídas: estoque e faturamento em serviços separados, persistência independente, feedback de falha simulada e interface única que mantém o operador informado em cada etapa.",
+      "Modelar emissão e fechamento de notas com regras distribuídas: estoque e faturamento em serviços separados, SQLite independente, falha simulada no estoque e UI única que mantém o operador informado em cada etapa.",
     scope: [
-      "Microsserviço de estoque: cadastro de produtos, consulta de saldos, baixa e simulação de indisponibilidade.",
-      "Microsserviço de faturamento: criação de notas, numeração sequencial, status Aberta/Fechada e impressão.",
-      "Frontend Angular como superfície única para produtos, notas, impressão e testes de resiliência.",
-      "Bancos SQLite isolados por serviço (`stock.db` e `billing.db`).",
-      "Script PowerShell de build unificado e solution Visual Studio para desenvolvimento local.",
-      "Documentação técnica de arquitetura, decisões e fluxos de erro."
+      "StockService: cadastro de produtos, consulta de saldos, baixa e simulação de falha.",
+      "BillingService: criação de notas, numeração sequencial, status Aberta/Fechada e impressão.",
+      "Frontend Angular como superfície única para produtos, notas, impressão e teste de resiliência.",
+      "Bancos SQLite isolados (`stock.db` e `billing.db`).",
+      "Solution Visual Studio + script PowerShell `build-all.ps1` para build local.",
+      "Documentação de arquitetura e decisões em `DETALHAMENTO_TECNICO.md`."
     ],
     delivery: [
-      "APIs ASP.NET Core 10 com Minimal APIs, EF Core e middleware global de exceções retornando `ProblemDetails`.",
-      "Comunicação HTTP entre BillingService e StockService com validações de saldo, produto inexistente e idempotência na baixa.",
-      "Interface Angular 20 com Reactive Forms, RxJS (`forkJoin`, `switchMap`, `catchError`) e componentes standalone.",
-      "Fluxo de impressão: nota só imprime em status `Aberta`; sucesso altera para `Fechada` e dispara baixa de estoque.",
-      "Simulação de falha no serviço de estoque com feedback visual e recuperação após desativar o modo de teste.",
-      "SCSS customizado sem biblioteca de UI externa, alinhado ao escopo acadêmico do projeto."
+      "APIs ASP.NET Core 10 com Minimal APIs, EF Core e middleware de exceções com `ProblemDetails`.",
+      "Comunicação HTTP Billing → Stock com validação de saldo, produto inexistente e idempotência na baixa.",
+      "Angular 20 com Reactive Forms, RxJS (`forkJoin`, `switchMap`, `catchError`) e componentes standalone.",
+      "Impressão só em status `Aberta`; sucesso fecha a nota e dispara baixa de estoque.",
+      "Modo de falha no estoque com feedback visual e recuperação ao desativar o teste.",
+      "SCSS próprio, sem biblioteca de UI externa."
     ],
     result: [
-      "Solução executável localmente com três processos (estoque, faturamento, Angular) e README descrevendo arquitetura e uso.",
-      "Separação clara de domínios facilita evolução independente de estoque e faturamento.",
-      "Tratamento de erro ponta a ponta: backend com códigos de negócio e frontend com mensagens amigáveis.",
-      "Base documentada em `DETALHAMENTO_TECNICO.md` para revisão de decisões por recrutador ou tech lead."
+      "Solução local com três processos (Stock, Billing, Angular) e README atualizado de arquitetura e uso.",
+      "Bounded contexts claros: estoque e faturamento evoluem com contratos HTTP explícitos.",
+      "Erro ponta a ponta — códigos de negócio no backend e mensagens amigáveis no front.",
+      "Base pronta para JWT, testes automatizados, Docker e CI/CD (próximos passos documentados no README)."
     ],
     stack: [
       "Angular 20",
@@ -273,17 +419,17 @@ const projects = [
     statusSub: "",
     caseStudy: {
       objective:
-        "Demonstrar domínio de microsserviços em .NET com frontend Angular: emissão fiscal, controle de estoque e resiliência simulada em um fluxo coerente para o usuário final.",
+        "Demonstrar microsserviços .NET com frontend Angular: emissão fiscal, controle de estoque e resiliência simulada em um fluxo coerente para o operador.",
       process:
-        "Definição dos bounded contexts (estoque vs. faturamento), implementação das APIs, modelagem EF Core com SQLite, integração HTTP entre serviços, construção da UI Angular e documentação do fluxo de impressão e baixa.",
+        "Bounded contexts (estoque vs. faturamento), APIs + EF Core/SQLite, integração HTTP, UI Angular e documentação do fluxo de impressão/baixa.",
       decisions: [
-        "Dois microsserviços em vez de monólito para isolar persistência e evoluir contratos HTTP explicitamente.",
-        "SQLite por serviço para setup local simples sem infraestrutura compartilhada.",
-        "Angular com RxJS para orquestrar chamadas paralelas e encadeadas ao dashboard.",
-        "Simulação de falha no estoque para validar feedback e recuperação sem ambiente externo."
+        "Dois microsserviços em vez de monólito para isolar persistência e contratos.",
+        "SQLite por serviço para setup local sem infra compartilhada.",
+        "Angular + RxJS para orquestrar chamadas paralelas e encadeadas.",
+        "Falha simulada no estoque para validar feedback e idempotência sem dependência externa."
       ],
       outcomeDetail:
-        "O repositório entrega cadastro de produtos, notas com múltiplos itens, impressão condicionada a status, baixa idempotente de estoque e modo de falha testável; o modal deste portfólio resume objetivo, processo e decisões para leitura técnica rápida."
+        "O repositório entrega produtos, notas multi-item, impressão condicionada a status, baixa idempotente e modo de falha testável — alinhado ao README atual e ao `DETALHAMENTO_TECNICO.md`."
     }
   },
   {

@@ -2,7 +2,7 @@ module.exports = {
   htmlLang: "pt-BR",
   pageTitle: "Lucas Oliveira da Silva — Desenvolvedor Full Stack",
   metaDescription:
-    "Portfólio: PhiloMedia, Handcrafted Haven, site jurídico em produção. React, Node.js, TypeScript. Estágio aberto — remoto ou presencial, disponível para início imediato.",
+    "Portfólio de Lucas Silva: PhiloMedia, Tatame Manager, agente AI Empório da Música, Pirate Battle e site jurídico. React, Node, TypeScript, Python. Aberto a estágio.",
   skipLink: "Pular para os projetos",
   nav: {
     aria: "Principal",

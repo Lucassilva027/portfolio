@@ -2,7 +2,7 @@ module.exports = {
   htmlLang: "en",
   pageTitle: "Lucas Oliveira da Silva — Full Stack Developer",
   metaDescription:
-    "Portfolio: PhiloMedia, Handcrafted Haven, law firm site in production. React, Node.js, TypeScript. Internships open — remote or on-site, available immediately.",
+    "Lucas Silva's portfolio: PhiloMedia, Tatame Manager, Empório AI agent, Pirate Battle, and a live law-firm site. React, Node, TypeScript, Python. Open to internships.",
   skipLink: "Skip to projects",
   nav: {
     aria: "Main",

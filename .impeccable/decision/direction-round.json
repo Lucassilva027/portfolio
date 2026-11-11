@@ -1,0 +1,177 @@
+{
+  "title": "Escolha o mundo visual do portfólio",
+  "question": "Você curtiu Dialéticas e Partitura — entrei Arcos de quadra (basquete sem bola literal). Escolhe uma, ou pede fusão no chat.",
+  "options": [
+    {
+      "id": "assigned",
+      "kind": "assigned",
+      "label": "Espalhadas dialéticas",
+      "kicker": "THE ROLL",
+      "lineage": "edições de diálogo filosófico — páginas enfrentadas, tese e antítese",
+      "thesis": "O portfólio como diálogo: cada case é um argumento com verso e reverso.",
+      "palette": ["#f4efe6", "#1a1a18", "#2f5d50", "#c45c26"],
+      "materials": ["papel de livro", "margem tipográfica", "filete editorial"],
+      "viewport": "Nome e uma linha de tese à esquerda; o case em destaque abre como página de resposta à direita.",
+      "risk": "Pode parecer acadêmico demais se a tipografia ficar fria.",
+      "raised": [
+        {
+          "from": "challenger-understory",
+          "raise": "O case em destaque revela-se por proximidade: atenção ilumina o argumento ativo."
+        },
+        {
+          "from": "challenger-loteria",
+          "raise": "Cada case é um ícone-ideia completo — nunca cortado; número e nome na mesma respiração."
+        },
+        {
+          "from": "challenger-hypercard",
+          "raise": "Cada case é endereçável como carta própria (deep link / âncora), com trilha de volta explícita."
+        },
+        {
+          "from": "challenger-scope",
+          "raise": "Espaçamento medido como retícula: ritmo tipográfico preciso, sem costume de instrumento."
+        },
+        {
+          "from": "grounded-court",
+          "raise": "O destaque segue um arco de trajetória (setup → liberação → resultado), sem vestir a quadra."
+        }
+      ],
+      "comp": ".impeccable/mocks/decision/assigned.jpg"
+    },
+    {
+      "id": "model-pick",
+      "kind": "pick",
+      "label": "Cadência de partitura",
+      "kicker": "IMPECCABLE’S PICK",
+      "lineage": "papel de partitura — compassos, pausas, dinâmicas",
+      "thesis": "O portfólio respira em compassos: entrada, pausa, resolução.",
+      "palette": ["#f7f3ea", "#111111", "#1c3d6e", "#b33a2b"],
+      "materials": ["pauta impressa", "tinta de partitura", "espaço entre compassos"],
+      "viewport": "Nome como título de peça; cases listados como movimentos com barras de ritmo, não cards iguais.",
+      "risk": "É a direção mais óbvia quando o brief menciona piano — familiaridade alta.",
+      "comp": ".impeccable/mocks/decision/model-pick.jpg"
+    },
+    {
+      "id": "grounded-court",
+      "kind": "grounded",
+      "label": "Arcos de quadra",
+      "kicker": "DO TEU MUNDO",
+      "lineage": "geometria de quadra — madeira, arcos, círculo da lance-livre, giz",
+      "thesis": "O case em destaque é o arremesso que entrou; o resto orbitra no arco de três.",
+      "palette": ["#c4a574", "#1a1a18", "#c45c26", "#e8e2d6"],
+      "materials": ["piso de hardwood", "tinta de quadra", "sombra de ginásio"],
+      "viewport": "Nome no eixo da lane; PhiloMedia dentro do círculo da lance-livre; Empório e Pirate Battle ao longo do arco.",
+      "risk": "Pode ler esportivo demais se o hardwood dominar a prova técnica.",
+      "comp": ".impeccable/mocks/decision/grounded-court.jpg"
+    },
+    {
+      "id": "challenger-provenance",
+      "kind": "challenger",
+      "catalogId": "exhibition-museum-curation-provenance-ribbon",
+      "verdict": "competitive",
+      "label": "Fita de proveniência",
+      "lineage": "fita de custódia museológica — posse, troca, lacuna, restituição",
+      "thesis": "Cada projeto é um objeto com trilha de evidência: decisão, deploy, lacuna.",
+      "palette": ["#efe5d4", "#8b1e1e", "#2a2a28", "#6b7280"],
+      "materials": ["seda vermelha", "carimbo de arquivo", "fio desfiado"],
+      "viewport": "Uma fita contínua guia do destaque até os cases; cada dobra data uma decisão técnica.",
+      "case": "Ganha em clareza de prova para tech lead; perde em identificação pessoal frente ao diálogo filosófico.",
+      "risk": "Pode soar burocrático se a fita virar timeline genérica.",
+      "comp": ".impeccable/mocks/decision/challenger-provenance.jpg",
+      "hero": "https://impeccable.style/worlds/cards/exhibition-museum-curation-provenance-ribbon-hero.webp",
+      "board": "https://impeccable.style/worlds/cards/exhibition-museum-curation-provenance-ribbon.webp"
+    },
+    {
+      "id": "challenger-album",
+      "kind": "challenger",
+      "catalogId": "pop-culture-shelf-sticker-album-spread",
+      "verdict": "competitive",
+      "label": "Álbum de figurinhas",
+      "lineage": "álbum colecionável — slots numerados, contornos fantasma, gloss",
+      "thesis": "Os projetos são figurinhas: o que falta e o que brilha ficam visíveis.",
+      "palette": ["#e8e2d6", "#ffffff", "#111111", "#d4a017"],
+      "materials": ["papel mate do álbum", "adesivo gloss", "contorno fantasma"],
+      "viewport": "Grade de slots; PhiloMedia e Pirate Battle já colados com gloss; arquivo ainda em outline.",
+      "case": "Metáfora de portfólio limpa e memorável; perde um pouco em seriedade para estágio sério.",
+      "risk": "Pode parecer juvenil se o gloss dominar a prova técnica.",
+      "comp": ".impeccable/mocks/decision/challenger-album.jpg",
+      "hero": "https://impeccable.style/worlds/cards/pop-culture-shelf-sticker-album-spread-hero.webp",
+      "board": "https://impeccable.style/worlds/cards/pop-culture-shelf-sticker-album-spread.webp"
+    },
+    {
+      "id": "challenger-understory",
+      "kind": "challenger",
+      "catalogId": "dream-surreal-impossible-worlds-luminescent-alien-understory",
+      "verdict": "declined",
+      "label": "Sub-bosque luminoso",
+      "lineage": "floresta alienígena ao anoitecer — esporos, veias, chuva lenta",
+      "thesis": "O caminho se acende dois passos à frente.",
+      "palette": ["#0a0f0c", "#5ef0e0", "#b39dff", "#d8ffe8"],
+      "materials": ["húmus quase preto", "brilho de esporo", "veias de raiz"],
+      "case": "Fraco em identificação de recrutador e em clareza de cases.",
+      "kept": "Atenção como iluminação — revelar o argumento ativo por proximidade.",
+      "hero": "https://impeccable.style/worlds/cards/dream-surreal-impossible-worlds-luminescent-alien-understory-hero.webp"
+    },
+    {
+      "id": "challenger-loteria",
+      "kind": "challenger",
+      "catalogId": "vernacular-ephemera-loteria-tabla-night",
+      "verdict": "declined",
+      "label": "Noite de loteria",
+      "lineage": "cartas de loteria — ícone, número, rima do caller",
+      "thesis": "Cada case chamado pelo nome e pelo número na mesma respiração.",
+      "palette": ["#f5d64c", "#e8457a", "#1aa6a6", "#1a1a1a"],
+      "materials": ["tinta de contorno", "campo flat de carnaval", "feijão seco"],
+      "case": "Identificação BR forte, mas risco de kitsch frente a tech lead.",
+      "kept": "Um ícone-ideia por peça, completo, nunca cortado.",
+      "hero": "https://impeccable.style/worlds/cards/vernacular-ephemera-loteria-tabla-night-hero.webp"
+    },
+    {
+      "id": "challenger-hypercard",
+      "kind": "challenger",
+      "catalogId": "medium-native-hypercard-stack-shoebox",
+      "verdict": "declined",
+      "label": "Pilha HyperCard",
+      "lineage": "stack HyperCard — cartas P&B, botões pintados, trilha de volta",
+      "thesis": "Cada case é uma carta com botão para a próxima que o autor escolheu.",
+      "palette": ["#ffffff", "#000000", "#7a7a7a"],
+      "materials": ["stipple", "borda desenhada", "botão invertido"],
+      "case": "Nostalgia geek fraca para o recrutador; clareza média.",
+      "kept": "Cases endereçáveis com trilha de volta explícita.",
+      "hero": "https://impeccable.style/worlds/cards/medium-native-hypercard-stack-shoebox-hero.webp"
+    },
+    {
+      "id": "challenger-scope",
+      "kind": "challenger",
+      "catalogId": "scientific-notation-oscilloscope-signal-bench",
+      "verdict": "declined",
+      "label": "Osciloscópio",
+      "lineage": "banco de sinal — traço fósforo, retícula, knobs",
+      "thesis": "O trabalho como forma de onda estabilizada.",
+      "palette": ["#0b120e", "#33ff66", "#6b7280", "#f59e0b"],
+      "materials": ["vidro fósforo", "retícula gravada", "bezel de instrumento"],
+      "case": "Costume de ferramenta — perde identificação pessoal e clareza de produto.",
+      "kept": "Precisão medida no ritmo espacial (sem vestir o instrumento).",
+      "hero": "https://impeccable.style/worlds/cards/scientific-notation-oscilloscope-signal-bench-hero.webp"
+    }
+  ],
+  "reroll": {
+    "registers": ["safer", "bolder"]
+  },
+  "buildPath": {
+    "value": "comp",
+    "toggle": true
+  },
+  "canon": true,
+  "canonCard": {
+    "kind": "canon",
+    "label": "Padrão da categoria",
+    "thesis": "Portfolio tech escaneável: hero, grid de cases, stack, contato — no máximo craft.",
+    "palette": ["#0b0f1a", "#ffffff", "#6d8dff"],
+    "materials": ["grid limpo", "screenshot de produto", "sans neutra"],
+    "viewport": "Nome, tagline, CTA e cases em cards — o que o recrutador espera.",
+    "risk": "Indistinguível dos outros portfolios de estágio, por desenho.",
+    "comp": ".impeccable/mocks/decision/canon.jpg"
+  },
+  "steer": true
+}
+

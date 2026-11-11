@@ -1,0 +1,215 @@
+{
+  "schemaVersion": 3,
+  "stage": "components",
+  "id": "components",
+  "title": "Plan and asset review · src/views/index.ejs",
+  "comp": {
+    "path": ".impeccable/mocks/decision/grounded-court.jpg",
+    "width": 1280,
+    "height": 720
+  },
+  "specSha256": "6524a5c2b0709a46315b0e32e28ce4abe823bc2e088b8175876efdd628884c0e",
+  "components": [
+    {
+      "id": "court-floor",
+      "name": "Court floor",
+      "kind": "image",
+      "role": "asset",
+      "box": {
+        "x": 0,
+        "y": 0,
+        "w": 1,
+        "h": 1
+      },
+      "note": "Full-bleed dark hardwood basketball court photograph, low angle, white chalk lines, black painted key, no UI text or icons in the plate",
+      "medium": "raster",
+      "preview": {
+        "kind": "image",
+        "path": "assets/plates/court-floor.png"
+      },
+      "dependencies": []
+    }
+  ],
+  "codeRegions": [
+    {
+      "id": "nav",
+      "name": "Nav",
+      "kind": "chrome",
+      "box": {
+        "x": 0,
+        "y": 0,
+        "w": 1,
+        "h": 0.1
+      },
+      "note": "Top navigation strip: LS mark, Projetos Stack Sobre Contato, email and WhatsApp"
+    },
+    {
+      "id": "name",
+      "name": "Name",
+      "kind": "text",
+      "box": {
+        "x": 0,
+        "y": 0.3,
+        "w": 0.6,
+        "h": 0.2
+      },
+      "note": "LUCAS OLIVEIRA DA SILVA large white condensed display"
+    },
+    {
+      "id": "tagline",
+      "name": "Tagline",
+      "kind": "text",
+      "box": {
+        "x": 0.0469,
+        "y": 0.5,
+        "w": 0.5344,
+        "h": 0.1
+      },
+      "note": "DESENVOLVO WEB APPS, AGENTES DE IA E GAMES DE NAVEGADOR with AGENTES DE IA in orange"
+    },
+    {
+      "id": "featured-kicker",
+      "name": "Featured kicker",
+      "kind": "text",
+      "box": {
+        "x": 0.6,
+        "y": 0.2,
+        "w": 0.3469,
+        "h": 0.1
+      },
+      "note": "PROJETO EM DESTAQUE small orange caps inside free-throw circle"
+    },
+    {
+      "id": "featured-title",
+      "name": "Featured title",
+      "kind": "text",
+      "box": {
+        "x": 0.6,
+        "y": 0.3,
+        "w": 0.4,
+        "h": 0.1
+      },
+      "note": "PHILOMEDIA white serif display inside circle"
+    },
+    {
+      "id": "featured-body",
+      "name": "Featured body",
+      "kind": "text",
+      "box": {
+        "x": 0.6,
+        "y": 0.4,
+        "w": 0.4,
+        "h": 0.2
+      },
+      "note": "PhiloMedia one-line summary white sans inside circle"
+    },
+    {
+      "id": "featured-cta",
+      "name": "Featured cta",
+      "kind": "control",
+      "box": {
+        "x": 0.6234,
+        "y": 0.5,
+        "w": 0.2062,
+        "h": 0.1
+      },
+      "note": "VER PROJETO link with orange arrow"
+    },
+    {
+      "id": "arc-emporio-kicker",
+      "name": "Arc emporio kicker",
+      "kind": "text",
+      "box": {
+        "x": 0.15,
+        "y": 0.7,
+        "w": 0.15,
+        "h": 0.1
+      },
+      "note": "AGENTE DE IA orange small caps"
+    },
+    {
+      "id": "arc-emporio-title",
+      "name": "Arc emporio title",
+      "kind": "text",
+      "box": {
+        "x": 0,
+        "y": 0.7,
+        "w": 0.4,
+        "h": 0.2
+      },
+      "note": "EMPÓRIO AI AGENT white serif"
+    },
+    {
+      "id": "arc-emporio-body",
+      "name": "Arc emporio body",
+      "kind": "text",
+      "box": {
+        "x": 0,
+        "y": 0.8,
+        "w": 0.4,
+        "h": 0.1
+      },
+      "note": "Empório short summary white"
+    },
+    {
+      "id": "arc-emporio-cta",
+      "name": "Arc emporio cta",
+      "kind": "control",
+      "box": {
+        "x": 0,
+        "y": 0.8,
+        "w": 0.2,
+        "h": 0.2
+      },
+      "note": "EXPLORAR link"
+    },
+    {
+      "id": "arc-pirate-kicker",
+      "name": "Arc pirate kicker",
+      "kind": "text",
+      "box": {
+        "x": 0.5,
+        "y": 0.7,
+        "w": 0.3,
+        "h": 0.1
+      },
+      "note": "JOGO DE NAVEGADOR orange small caps"
+    },
+    {
+      "id": "arc-pirate-title",
+      "name": "Arc pirate title",
+      "kind": "text",
+      "box": {
+        "x": 0.5,
+        "y": 0.7,
+        "w": 0.3984,
+        "h": 0.1667
+      },
+      "note": "PIRATE BATTLE white serif"
+    },
+    {
+      "id": "arc-pirate-body",
+      "name": "Arc pirate body",
+      "kind": "text",
+      "box": {
+        "x": 0.5,
+        "y": 0.8,
+        "w": 0.5,
+        "h": 0.1
+      },
+      "note": "Pirate Battle short summary white"
+    },
+    {
+      "id": "arc-pirate-cta",
+      "name": "Arc pirate cta",
+      "kind": "control",
+      "box": {
+        "x": 0.5,
+        "y": 0.8,
+        "w": 0.2,
+        "h": 0.2
+      },
+      "note": "JOGAR link"
+    }
+  ]
+}

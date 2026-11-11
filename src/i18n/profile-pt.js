@@ -2,12 +2,15 @@ module.exports = {
   stackMain: [
     "TypeScript",
     "JavaScript",
+    "Python",
     "React",
     "Next.js",
     "Node.js",
     "Express",
+    "PixiJS",
     "MongoDB",
     "PostgreSQL",
+    "SQLite",
     "HTML",
     "CSS",
     "C#",
@@ -16,7 +19,7 @@ module.exports = {
     "Firebase"
   ],
   aboutLead:
-    "Estudante de desenvolvimento de software na BYU-Idaho, baseado em Gravataí (RS). Construo aplicações full stack com React, TypeScript e Node.js e contribuo em projetos open source.",
+    "Estudante de desenvolvimento de software na BYU-Idaho, em Gravataí (RS). Construo apps full stack, agentes de IA e jogos no navegador — e publico demos reais. Fora do código, o que me equilibra é basquete, piano, animes e filosofia: ritmo, prática e a vontade de entender o porquê das coisas, não só o como.",
   proof: {
     sections: [
       {
@@ -26,6 +29,11 @@ module.exports = {
             label: "PhiloMedia",
             detail: "Render — busca TMDB, detalhe da obra, citação e leitura com IA.",
             href: "https://philomedia.onrender.com/html/index.html"
+          },
+          {
+            label: "Pirate Battle",
+            detail: "Vercel — shooter naval 2D com ranking e cenários de rede.",
+            href: "https://shooter-naval-2d.vercel.app"
           },
           {
             label: "Polesso & Oliveira Advogados",
@@ -53,9 +61,19 @@ module.exports = {
             href: "https://github.com/Lucassilva027"
           },
           {
+            label: "Empório da Música — Agente AI",
+            detail: "Desafio Artefact: tools SQL, RAG híbrido, Streamlit e testes.",
+            href: "https://github.com/Lucassilva027/emporio-da-musica-ai-agent"
+          },
+          {
             label: "Repositório PhiloMedia",
             detail: "README, variáveis de ambiente, seeds e testes automatizados.",
             href: "https://github.com/Lucassilva027/philomedia"
+          },
+          {
+            label: "Repositório Pirate Battle",
+            detail: "PixiJS, simulação determinística e MSW no README.",
+            href: "https://github.com/Lucassilva027/shooter-naval-2d"
           },
           {
             label: "Repositório Handcrafted Haven",

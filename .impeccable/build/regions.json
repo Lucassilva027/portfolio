@@ -1,0 +1,101 @@
+{
+  "regions": [
+    {
+      "id": "court-floor",
+      "kind": "image",
+      "grid": "A0:J9",
+      "bleed": true,
+      "note": "Full-bleed dark hardwood basketball court photograph, low angle, white chalk lines, black painted key, no UI text or icons in the plate"
+    },
+    {
+      "id": "nav",
+      "kind": "chrome",
+      "grid": "A0:J0",
+      "note": "Top navigation strip: LS mark, Projetos Stack Sobre Contato, email and WhatsApp"
+    },
+    {
+      "id": "name",
+      "kind": "text",
+      "grid": "A3:F4",
+      "note": "LUCAS OLIVEIRA DA SILVA large white condensed display"
+    },
+    {
+      "id": "tagline",
+      "kind": "text",
+      "grid": "A5:F5",
+      "note": "DESENVOLVO WEB APPS, AGENTES DE IA E GAMES DE NAVEGADOR with AGENTES DE IA in orange"
+    },
+    {
+      "id": "featured-kicker",
+      "kind": "text",
+      "grid": "G2:J2",
+      "note": "PROJETO EM DESTAQUE small orange caps inside free-throw circle"
+    },
+    {
+      "id": "featured-title",
+      "kind": "text",
+      "grid": "G3:J3",
+      "note": "PHILOMEDIA white serif display inside circle"
+    },
+    {
+      "id": "featured-body",
+      "kind": "text",
+      "grid": "G4:J5",
+      "note": "PhiloMedia one-line summary white sans inside circle"
+    },
+    {
+      "id": "featured-cta",
+      "kind": "control",
+      "grid": "G5:I5",
+      "note": "VER PROJETO link with orange arrow"
+    },
+    {
+      "id": "arc-emporio-kicker",
+      "kind": "text",
+      "grid": "A7:C7",
+      "note": "AGENTE DE IA orange small caps"
+    },
+    {
+      "id": "arc-emporio-title",
+      "kind": "text",
+      "grid": "A7:D8",
+      "note": "EMPÓRIO AI AGENT white serif"
+    },
+    {
+      "id": "arc-emporio-body",
+      "kind": "text",
+      "grid": "A8:D8",
+      "note": "Empório short summary white"
+    },
+    {
+      "id": "arc-emporio-cta",
+      "kind": "control",
+      "grid": "A8:B9",
+      "note": "EXPLORAR link"
+    },
+    {
+      "id": "arc-pirate-kicker",
+      "kind": "text",
+      "grid": "F7:H7",
+      "note": "JOGO DE NAVEGADOR orange small caps"
+    },
+    {
+      "id": "arc-pirate-title",
+      "kind": "text",
+      "grid": "F7:J8",
+      "note": "PIRATE BATTLE white serif"
+    },
+    {
+      "id": "arc-pirate-body",
+      "kind": "text",
+      "grid": "F8:J8",
+      "note": "Pirate Battle short summary white"
+    },
+    {
+      "id": "arc-pirate-cta",
+      "kind": "control",
+      "grid": "F8:G9",
+      "note": "JOGAR link"
+    }
+  ]
+}

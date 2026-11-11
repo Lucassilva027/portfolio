@@ -1,9 +1,109 @@
 module.exports = {
+  "emporio-ai-agent": {
+    title: "Empório da Música — AI Agent",
+    summaryLine:
+      "Customer-support assistant \"Tom\" for an instrument store: SQLite catalog/stock/orders, policy answers via hybrid RAG, and polite refusal outside store scope.",
+    surfaceHighlight:
+      "Artefact AI Engineer challenge: hybrid agent with SQL tools, RAG, and LLM failover.",
+    statusSub: "AI Engineer Technical Challenge — Artefact (2026)",
+    imageAlt:
+      "GitHub preview of the Empório da Música customer-support agent repository",
+    roleLabel:
+      "AI Engineer — ReAct/Function Calling agent, hybrid RAG, SQLite ETL, CLI/Streamlit UIs",
+    challenge:
+      "Ship a reliable messaging agent: factual catalog numbers without hallucination, policies explained from retrieved excerpts, consistent persona, and a working path even without an LLM API key.",
+    scope: [
+      "Tom persona with a system prompt aligned to store policies (PIX, installments, LGPD, deadlines).",
+      "Deterministic SQL tools for prices, stock, promotions, orders, and exchange eligibility.",
+      "Hybrid RAG over the Policies Manual (PDF): MiniLM embeddings + TF-IDF + section boosting.",
+      "Hybrid layer: Function Calling (Groq/Gemini) with failover plus a zero-config local ReAct engine.",
+      "Rich CLI and Streamlit UIs with session history in SQLite.",
+      "ETL pipeline with data-quality audit for product and order CSVs."
+    ],
+    delivery: [
+      "EmporioAgent + StoreToolkit + PolicyRAGEngine architecture sharing the same tools on cloud and local paths.",
+      "Groq and Gemini providers with `LLM_PROVIDER=auto` and keyless local fallback.",
+      "Customer history/context persistence so conversations resume in CLI and UI.",
+      "Configurable reference date for stable deadline evaluation in tests.",
+      "pytest suite and diagnostic scripts (`ping_llm`, conversation example generation).",
+      "README covering architecture, hybrid decisions, and Windows/Linux setup."
+    ],
+    result: [
+      "Complete Artefact challenge prototype that runs locally with or without a cloud LLM.",
+      "Clear split between tabular facts (SQL) and policy text (RAG), avoiding invented price/stock.",
+      "Provider failover plus local engine for stable free-tier demos.",
+      "Documented base ready for more tools, observability, or chat deploy."
+    ],
+    caseStudy: {
+      objective:
+        "Demonstrate AI Engineer skill with a grounded support agent: SQL tools, policy RAG, and resilient operation without depending on a single LLM vendor.",
+      process:
+        "Brief and manual review, SQLite ETL modeling, tools implementation, local engine + Function Calling, Streamlit/CLI UI, tests, and conversation examples.",
+      decisions: [
+        "Hybrid SQL + RAG so tabular facts never mix with policy prose.",
+        "Deterministic local engine as fallback and zero-config demo mode.",
+        "Groq → Gemini failover instead of a single paid provider.",
+        "Persona and critical rules injected in the system prompt for tone and compliance."
+      ],
+      outcomeDetail:
+        "The repository delivers a full agent with tools, RAG, CLI, Streamlit, and tests — summarized here for quick technical review."
+    }
+  },
+  "shooter-naval-2d": {
+    title: "Pirate Battle",
+    summaryLine:
+      "Top-down naval shooter: steer, fire front and broadside cannons, dodge islands/enemies, and survive for points — Jungle Gaming Game Developer Challenge submission.",
+    surfaceHighlight:
+      "2D top-down game on Vercel with deterministic simulation, ranking, and mocked network scenarios.",
+    statusSub: "Jungle Gaming — Game Developer Challenge",
+    imageAlt: "Screenshot of Pirate Battle live on Vercel",
+    roleLabel:
+      "Game Developer — TypeScript, PixiJS, Vite, fixed-step simulation, ranking/history UX",
+    challenge:
+      "Ship a browser-playable game with deterministic simulation, clear HUD, keyboard/touch controls, local captain profile, and ranking resilient to network failures (including offline).",
+    scope: [
+      "Fixed-step simulation with URL seed for reproducible matches and three island layouts.",
+      "Keyboard + landscape stick/touch controls; pause and duration/spawn options.",
+      "HUD for health, score, time, and cannon reload; camera shake respecting reduced-motion.",
+      "Paginated ranking and history with idempotent match submission.",
+      "MSW network scenarios (latency, timeout, failure, out-of-order) to stress resilience.",
+      "Lazy-loaded PixiJS battle chunk with loading and error states."
+    ],
+    delivery: [
+      "Vite + TypeScript app with per-match frozen gameplay configuration.",
+      "PixiJS arena split from menu/ranking shell for performance and code-splitting.",
+      "Captain profile, personal bests per configuration, and local queue for pending results.",
+      "CSP and `VITE_API_*` variables documented for mock vs. real backend.",
+      "Vitest, ESLint, and typecheck in the challenge command flow.",
+      "Public Vercel deploy with a playable demo."
+    ],
+    result: [
+      "Live demo at https://shooter-naval-2d.vercel.app with full match and ranking flow.",
+      "Deterministic simulation makes QA and seed-based regression straightforward.",
+      "MSW scenarios make network failures reproducible without a real backend.",
+      "Ready to point at a real API without rewriting gameplay."
+    ],
+    caseStudy: {
+      objective:
+        "Deliver a complete 2D naval shooter for the Jungle Gaming challenge: gameplay, HUD, ranking, and network resilience in one web app.",
+      process:
+        "Gameplay config definition, simulation and PixiJS arena implementation, menu/ranking with MSW, network-scenario hardening, and Vercel publish.",
+      decisions: [
+        "Fixed step + seed for reproducible matches and stable tests.",
+        "Lazy PixiJS chunk separate from menus to isolate GPU/JS cost.",
+        "MSW scenario selector to validate offline/timeout UX without a backend.",
+        "Hard 8-enemy cap and explicit spawn rules for balance."
+      ],
+      outcomeDetail:
+        "The live demo covers match, ranking, and history; objective, process, and technical decisions are summarized here for quick review."
+    }
+  },
   philomedia: {
     summaryLine:
-      "Web product connecting TMDB titles to persisted philosophical quotes, with AI-generated interpretation from the work and the quote.",
+      "Web product connecting TMDB titles to persisted philosophical quotes, with AI-generated interpretation — live and usable, not finished yet.",
     surfaceHighlight:
-      "Live on Render with documented API and automated tests.",
+      "Already live on Render (API + tests) — product still finishing, very close to done.",
+    statusSub: "Not complete yet — very close to shipping",
     imageAlt:
       "PhiloMedia screen with quote of the day and film recommendations in dialogue",
     roleLabel:
@@ -30,7 +130,7 @@ module.exports = {
       "Core flow usable in production on Render, with README covering MVP scope, limits, and roadmap.",
       "Browsable documentation at `/api-docs`, lowering onboarding cost for another developer or future integration.",
       "Clear split between catalog data (TMDB), editorial content (quotes), and generation (AI), so each axis can evolve independently.",
-      "Foundation ready for extensions (search filters, favorites, full front-end auth) without re-architecting the core."
+      "Still unfinished — remaining roadmap items are close; foundation ready for filters, favorites, and full front-end auth."
     ],
     caseStudy: {
       objective:
@@ -44,7 +144,7 @@ module.exports = {
         "`render.yaml` and explicit environment config to reduce local vs. production drift."
       ],
       outcomeDetail:
-        "The repository describes a core already running in production: TMDB search and detail, persisted quotes, generated reading, documented API, and automated tests — summarized here for quick review by a recruiter or tech lead."
+        "The core already runs in production (TMDB search/detail, persisted quotes, generated reading, documented API, tests), but the product is not complete yet — a few near-term roadmap items remain before calling it finished."
     }
   },
   adv: {
@@ -144,99 +244,102 @@ module.exports = {
         "The live demo covers catalog, detail, reviews, and seller area; objective, collaborative process, and stack decisions are summarized here for recruiter or engineer review."
     }
   },
-  tkdmanagerpro: {
+  "tatame-manager": {
+    title: "Tatame Manager",
     summaryLine:
-      "Web app for student enrollment, classes, and attendance, with an admin panel for staff and instructors.",
+      "SaaS for Taekwondo academies: financial dashboards, classes, students, tuition, and instructor subscriptions — with WhatsApp and email notices.",
     surfaceHighlight:
-      "Node/Express MVP with academy domain modeled end to end.",
-    imageAlt: "Admin UI mock for TKDManagerPro",
+      "Live SaaS for Taekwondo academies — finance, classes, tuition, and subscriptions.",
+    statusSub: "Not complete yet — very close to shipping",
+    imageAlt:
+      "Tatame Manager admin UI — financial dashboard and academy management",
     roleLabel:
-      "Full stack — Node.js, Express, EJS, server MVC, domain modeling",
+      "Full stack — React/TypeScript, Node/Express, PostgreSQL, JWT, jobs, WhatsApp/email",
     challenge:
-      "Centralize enrollment, class assignment, and attendance in one web app with server-side business rules, data consistency, and an admin UI usable during peak hours at the academy.",
+      "Centralize academy operations and billing in a multi-role product (instructor/student), with subscription gating access, tuition reminder jobs, and a typed stack ready for production.",
     scope: [
-      "Admin module to register and edit students, belts, and class assignments.",
-      "Attendance register and lookup by class and time period.",
-      "EJS surface with shared partials across listings and forms.",
-      "Internal HTTP API (Express routes) aligned to domain resources.",
-      "Environment-based configuration (port, session secret, URLs).",
-      "Foundation for reports from the same data model without destructive migrations."
+      "Instructor panel: financial dashboard, classes, students, tuition, and subscription management.",
+      "Student portal: personal data, tuition, and payment journey.",
+      "JWT auth for instructors and students, with active-subscription checks.",
+      "Instructor signup with association create-or-link.",
+      "Automatic tuition generation and payment history.",
+      "Billing notices via WhatsApp (W-API) and email (Resend/SMTP) at D-2, D0, and D+2."
     ],
     delivery: [
-      "Express layer with RESTful routes per resource and uniform error middleware.",
-      "Server-side input validation as source of truth with feedback rendered in views.",
-      "MVC split: thin controllers, domain services, and swappable data access.",
-      "EJS templates with partials for dense lists, filters, and batch actions.",
-      "Entity modeling (student, class, attendance) with indexes and relations suited to weekly use.",
-      "Responsive presentation for desktop and smartphone at the front desk and on the mat."
+      "React + TypeScript (Vite), React Router, React Query, and Recharts.",
+      "Node.js + Express with TypeScript, PostgreSQL, and JWT auth.",
+      "Versioned SQL schema (`schema.sql` / `seed.sql`) and Docker Compose for local bootstrap.",
+      "Tuition/subscription notice jobs with idempotency and optional test allowlists.",
+      "Transactional email (verification, feedback invites, WhatsApp session alerts).",
+      "Public deploy at https://tatamemanager.tech/."
     ],
     result: [
-      "Codebase with clear domain boundaries, ready to grow with reports and roles without rewriting the core.",
-      "Admin UI oriented to repetitive tasks: few clicks per check-in and efficient tabular reading.",
-      "Aligned HTTP contract and views, reducing mismatch between user input and persisted data.",
-      "Admin UI mock in this portfolio (high-fidelity SVG) for product review without a public environment."
+      "Usable production product with instructor and student flows already running.",
+      "Financial and academy domain modeled end to end (classes, tuition, subscription).",
+      "Automated billing channel (WhatsApp + email) plus the student portal.",
+      "Not finished yet — very close; private repository on another account."
     ],
     caseStudy: {
       objective:
-        "Give the academy one system for enrollment, class organization, and attendance, with centralized server rules and a consistent admin interface.",
+        "Ship a full SaaS for Taekwondo academies: operations (classes/students), billing (tuition/subscription), and automated communication, with a typed stack and a real production environment.",
       process:
-        "Domain modeling from actors (front desk, instructor), weekly use-case definition, route and view implementation, validation review, and a Node-ready deployment package.",
+        "SQL domain modeling, typed Express API, React + React Query UI, notice jobs, W-API/Resend integration, and publish on tatamemanager.tech.",
       decisions: [
-        "Express as the single HTTP framework with server rendering to reduce operational complexity.",
-        "EJS for admin pages with low coupling to static assets.",
-        "Server validation and business invariants to prevent invalid states even on direct requests.",
-        "Explicit MVC separation to ease service tests and future persistence swaps."
+        "React + Vite on the front and Express/TypeScript on the back for a typed modular app.",
+        "PostgreSQL with `schema.sql` as source of truth (no migrations folder for a fresh environment).",
+        "Instructor subscription as the access gate to the panel, aligned with the SaaS model.",
+        "D-2/D0/D+2 notices with idempotency to avoid spamming students and instructors."
       ],
       outcomeDetail:
-        "A complete server-rendered MVC app with the academy domain modeled end to end; objective, process, and architectural decisions summarized here for recruiter or engineer review."
+        "The product is already online with panels, billing, and notices; a few final items remain before calling it complete. The repo is private — this case study mirrors the current README."
     }
   },
   "nota-fiscal": {
     title: "Invoice Issuance System",
     summaryLine:
-      "Invoice issuance with sequential numbering, print workflow, and stock updates across two .NET microservices.",
+      "Invoice issuance and management with sequential numbering, status-gated printing, and stock deduction across two .NET microservices and an Angular UI.",
     surfaceHighlight:
-      ".NET microservices and Angular UI with full fiscal flow runnable locally.",
+      "Full stack ASP.NET Core 10 microservices + Angular 20 — isolated inventory and billing.",
     imageAlt: "GitHub preview of the invoice system repository",
     roleLabel:
-      "Full stack — Angular, ASP.NET Core, microservices, EF Core",
+      "Full stack — Angular 20, ASP.NET Core 10, microservices, EF Core",
     challenge:
-      "Model invoice issuance and closing with distributed business rules: separate inventory and billing services, independent persistence, simulated failure feedback, and a single UI that keeps the operator informed at each step.",
+      "Model invoice issuance and closing with distributed rules: separate inventory and billing services, independent SQLite stores, simulated inventory failure, and a single UI that keeps the operator informed at each step.",
     scope: [
-      "Inventory microservice: product registration, balance queries, stock deduction, and outage simulation.",
-      "Billing microservice: invoice creation, sequential numbering, Open/Closed status, and printing.",
+      "StockService: product registration, balance queries, stock deduction, and failure simulation.",
+      "BillingService: invoice creation, sequential numbering, Open/Closed status, and printing.",
       "Angular frontend as the single surface for products, invoices, printing, and resilience testing.",
-      "Isolated SQLite databases per service (`stock.db` and `billing.db`).",
-      "Unified PowerShell build script and Visual Studio solution for local development.",
-      "Technical documentation of architecture, decisions, and error flows."
+      "Isolated SQLite databases (`stock.db` and `billing.db`).",
+      "Visual Studio solution + PowerShell `build-all.ps1` for local builds.",
+      "Architecture and decisions documented in `DETALHAMENTO_TECNICO.md`."
     ],
     delivery: [
-      "ASP.NET Core 10 APIs with Minimal APIs, EF Core, and global exception middleware returning `ProblemDetails`.",
-      "HTTP communication between BillingService and StockService with balance checks, missing product handling, and idempotent stock deduction.",
-      "Angular 20 UI with Reactive Forms, RxJS (`forkJoin`, `switchMap`, `catchError`), and standalone components.",
-      "Print flow: invoice prints only in `Open` status; success moves to `Closed` and triggers stock deduction.",
-      "Simulated inventory failure with visual feedback and recovery after disabling test mode.",
-      "Custom SCSS without an external UI library, aligned with the academic scope."
+      "ASP.NET Core 10 APIs with Minimal APIs, EF Core, and exception middleware returning `ProblemDetails`.",
+      "HTTP Billing → Stock with balance checks, missing-product handling, and idempotent deduction.",
+      "Angular 20 with Reactive Forms, RxJS (`forkJoin`, `switchMap`, `catchError`), and standalone components.",
+      "Print only in `Open` status; success closes the invoice and triggers stock deduction.",
+      "Inventory failure mode with visual feedback and recovery after disabling the test.",
+      "Custom SCSS without an external UI library."
     ],
     result: [
-      "Locally runnable solution with three processes (inventory, billing, Angular) and README describing architecture and usage.",
-      "Clear domain separation so inventory and billing can evolve independently.",
-      "End-to-end error handling: business codes on the backend and friendly messages on the frontend.",
-      "Documented in `DETALHAMENTO_TECNICO.md` for decision review by a recruiter or tech lead."
+      "Local solution with three processes (Stock, Billing, Angular) and an up-to-date architecture README.",
+      "Clear bounded contexts: inventory and billing evolve via explicit HTTP contracts.",
+      "End-to-end errors — business codes on the backend and friendly messages on the front.",
+      "Ready base for JWT, automated tests, Docker, and CI/CD (next steps listed in the README)."
     ],
     caseStudy: {
       objective:
         "Demonstrate .NET microservices with an Angular frontend: fiscal issuance, inventory control, and simulated resilience in one coherent operator flow.",
       process:
-        "Bounded contexts defined (inventory vs. billing), APIs implemented, EF Core + SQLite modeling, HTTP integration between services, Angular UI built, and print/deduction flow documented.",
+        "Bounded contexts (inventory vs. billing), APIs + EF Core/SQLite, HTTP integration, Angular UI, and print/deduction flow documentation.",
       decisions: [
-        "Two microservices instead of a monolith to isolate persistence and evolve HTTP contracts explicitly.",
+        "Two microservices instead of a monolith to isolate persistence and contracts.",
         "SQLite per service for simple local setup without shared infrastructure.",
-        "Angular with RxJS to orchestrate parallel and chained dashboard calls.",
-        "Inventory failure simulation to validate feedback and recovery without external dependencies."
+        "Angular + RxJS to orchestrate parallel and chained calls.",
+        "Simulated inventory failure to validate feedback and idempotency without external dependencies."
       ],
       outcomeDetail:
-        "The repository delivers product registration, multi-line invoices, status-gated printing, idempotent stock deduction, and a testable failure mode — summarized here for quick technical review."
+        "The repository delivers products, multi-line invoices, status-gated printing, idempotent stock deduction, and a testable failure mode — aligned with the current README and `DETALHAMENTO_TECNICO.md`."
     }
   }
 };

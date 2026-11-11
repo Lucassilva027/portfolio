@@ -2,12 +2,15 @@ module.exports = {
   stackMain: [
     "TypeScript",
     "JavaScript",
+    "Python",
     "React",
     "Next.js",
     "Node.js",
     "Express",
+    "PixiJS",
     "MongoDB",
     "PostgreSQL",
+    "SQLite",
     "HTML",
     "CSS",
     "C#",
@@ -16,7 +19,7 @@ module.exports = {
     "Firebase"
   ],
   aboutLead:
-    "Software development student at BYU-Idaho, based in Gravataí, Brazil. I build full-stack web apps with React, TypeScript, and Node.js and contribute to open source.",
+    "Software development student at BYU-Idaho, based in Gravataí, Brazil. I build full-stack apps, AI agents, and browser games — and ship real demos. Away from the keyboard, basketball, piano, anime, and philosophy keep me balanced: rhythm, practice, and wanting the why of things, not only the how.",
   proof: {
     sections: [
       {
@@ -26,6 +29,11 @@ module.exports = {
             label: "PhiloMedia",
             detail: "Render — TMDB search, title detail, quotes, and AI-assisted reading.",
             href: "https://philomedia.onrender.com/html/index.html"
+          },
+          {
+            label: "Pirate Battle",
+            detail: "Vercel — 2D naval shooter with ranking and network scenarios.",
+            href: "https://shooter-naval-2d.vercel.app"
           },
           {
             label: "Polesso & Oliveira Attorneys",
@@ -53,9 +61,19 @@ module.exports = {
             href: "https://github.com/Lucassilva027"
           },
           {
+            label: "Empório da Música — AI Agent",
+            detail: "Artefact challenge: SQL tools, hybrid RAG, Streamlit, and tests.",
+            href: "https://github.com/Lucassilva027/emporio-da-musica-ai-agent"
+          },
+          {
             label: "PhiloMedia repository",
             detail: "README, environment variables, seeds, and automated tests.",
             href: "https://github.com/Lucassilva027/philomedia"
+          },
+          {
+            label: "Pirate Battle repository",
+            detail: "PixiJS, deterministic simulation, and MSW in the README.",
+            href: "https://github.com/Lucassilva027/shooter-naval-2d"
           },
           {
             label: "Handcrafted Haven repository",
