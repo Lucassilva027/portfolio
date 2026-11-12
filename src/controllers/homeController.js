@@ -74,6 +74,7 @@ function renderHome(locale) {
 }
 
 module.exports = {
+  buildViewModel,
   renderHome,
   renderHomeEn: renderHome("en"),
   renderHomePt: renderHome("pt")

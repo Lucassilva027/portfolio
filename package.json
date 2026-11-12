@@ -5,12 +5,15 @@
   "main": "src/app.js",
   "scripts": {
     "start": "node src/app.js",
-    "dev": "node --watch src/app.js"
+    "dev": "node --watch src/app.js",
+    "build": "node scripts/build-static.js",
+    "preview": "npm run build && node scripts/preview-static.js"
   },
   "keywords": [
     "portfolio",
     "mvc",
     "express",
+    "static",
     "web-design"
   ],
   "author": "",
